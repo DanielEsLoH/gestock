@@ -6,10 +6,15 @@ import helmet from 'helmet';
 import morgan from 'morgan';
 
 /* ROUTE IMPORTS */
+import authRoutes from './routes/authRoutes';
 import dashboardRoutes from './routes/dashboardRoutes';
 import productRoutes from './routes/productRoutes';
-import userRoutes from './routes/userRoutes';
+import customerRoutes from './routes/customerRoutes';
 import expenseRoutes from './routes/expenseRoutes';
+
+/* MIDDLEWARE IMPORTS */
+import { authMiddleware } from './middleware/authMiddleware';
+import { errorHandler } from './middleware/errorHandler';
 
 /* CONFIGURATIONS */
 dotenv.config();
@@ -23,10 +28,18 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cors());
 
 /* ROUTES */
-app.use("/dashboard", dashboardRoutes); //http://localhost:8000/dashboard
-app.use("/products", productRoutes); //http://localhost:8000/products
-app.use("/users", userRoutes); //http://localhost:8000/users
-app.use("/expenses", expenseRoutes); //http://localhost:8000/expenses
+// Public routes (no authentication required)
+app.use("/auth", authRoutes); //http://localhost:3001/auth
+
+// Protected routes (authentication required)
+app.use("/dashboard", authMiddleware, dashboardRoutes); //http://localhost:3001/dashboard
+app.use("/products", authMiddleware, productRoutes); //http://localhost:3001/products
+app.use("/customers", authMiddleware, customerRoutes); //http://localhost:3001/customers
+app.use("/expenses", authMiddleware, expenseRoutes); //http://localhost:3001/expenses
+
+/* ERROR HANDLING MIDDLEWARE - Must be last */
+app.use(errorHandler);
+
 /* SERVER */
 const port = process.env.PORT || 3001;
 app.listen(port, () => {

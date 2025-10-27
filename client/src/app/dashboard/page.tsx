@@ -7,11 +7,11 @@ import {
   TrendingDown,
   TrendingUp,
 } from "lucide-react";
-import CardExpenseSummary from "./CardExpenseSummary";
-import CardPopularProducts from "./CardPopularProducts";
-import CardPurchaseSummary from "./CardPurchaseSummary";
-import CardSalesSummary from "./CardSalesSummary";
-import StatCard from "./StatCard";
+import CardExpenseSummary from "./components/CardExpenseSummary";
+import CardPopularProducts from "./components/CardPopularProducts";
+import CardPurchaseSummary from "./components/CardPurchaseSummary";
+import CardSalesSummary from "./components/CardSalesSummary";
+import StatCard from "./components/StatCard";
 
 const Dashboard = () => {
   return (
@@ -70,7 +70,7 @@ const Dashboard = () => {
             IconComponent: TrendingUp,
           },
           {
-            title: "Discuount",
+            title: "Discount",
             amount: "200.00",
             changePercentage: -10,
             IconComponent: TrendingDown,

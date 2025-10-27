@@ -1,7 +1,8 @@
 "use client";
 import React, { useEffect } from "react";
-import Navbar from "@/app/(components)/Navbar";
-import Sidebar from "@/app/(components)/Sidebar";
+import { useRouter, usePathname } from "next/navigation";
+import Navbar from "@/app/_components/Navbar";
+import Sidebar from "@/app/_components/Sidebar";
 import StoreProvider, { useAppSelector } from "./redux";
 
 const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
@@ -10,6 +11,19 @@ const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
   );
 
   const isDarkMode = useAppSelector((state) => state.global.isDarkMode);
+  const isAuthenticated = useAppSelector((state) => state.auth.isAuthenticated);
+  const router = useRouter();
+  const pathname = usePathname();
+
+  // Check authentication
+  useEffect(() => {
+    const publicPaths = ["/login", "/register"];
+    const isPublicPath = publicPaths.includes(pathname);
+
+    if (!isAuthenticated && !isPublicPath) {
+      router.push("/login");
+    }
+  }, [isAuthenticated, pathname, router]);
 
   useEffect(() => {
     if (isDarkMode) {
@@ -18,6 +32,19 @@ const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
       document.documentElement.classList.remove("light");
     }
   });
+
+  // Show loading or nothing while checking auth
+  const publicPaths = ["/login", "/register"];
+  const isPublicPath = publicPaths.includes(pathname);
+
+  if (!isAuthenticated && !isPublicPath) {
+    return <div className="flex items-center justify-center min-h-screen">Loading...</div>;
+  }
+
+  // For public paths (login/register), don't show sidebar/navbar
+  if (isPublicPath) {
+    return <>{children}</>;
+  }
 
   return (
     <div

@@ -13,75 +13,123 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model Users {
-  userId String @id
-  name   String
-  email  String
+model Account {
+  accountId   String   @id @default(uuid())
+  email       String   @unique
+  password    String
+  name        String
+  companyName String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  // Relations
+  customers         Customer[]
+  products          Products[]
+  sales             Sales[]
+  purchases         Purchases[]
+  expenses          Expenses[]
+  salesSummary      SalesSummary[]
+  purchaseSummary   PurchaseSummary[]
+  expenseSummary    ExpenseSummary[]
+  expenseByCategory ExpenseByCategory[]
+}
+
+model Customer {
+  customerId String  @id
+  accountId  String
+  name       String
+  email      String
+
+  account    Account @relation(fields: [accountId], references: [accountId])
 }
 
 model Products {
   productId     String      @id
+  accountId     String
   name          String
   price         Float
   rating        Float?
   stockQuantity Int
+
+  account       Account     @relation(fields: [accountId], references: [accountId])
   Sales         Sales[]
   Purchases     Purchases[]
 }
 
 model Sales {
   saleId      String   @id
+  accountId   String
   productId   String
   timestamp   DateTime
   quantity    Int
   unitPrice   Float
   totalAmount Float
+
+  account     Account  @relation(fields: [accountId], references: [accountId])
   product     Products @relation(fields: [productId], references: [productId])
 }
 
 model Purchases {
   purchaseId String   @id
+  accountId  String
   productId  String
   timestamp  DateTime
   quantity   Int
   unitCost   Float
   totalCost  Float
+
+  account    Account  @relation(fields: [accountId], references: [accountId])
   product    Products @relation(fields: [productId], references: [productId])
 }
 
 model Expenses {
   expenseId String   @id
+  accountId String
   category  String
   amount    Float
   timestamp DateTime
+
+  account   Account  @relation(fields: [accountId], references: [accountId])
 }
 
 model SalesSummary {
   salesSummaryId   String   @id
+  accountId        String
   totalValue       Float
   changePercentage Float?
   date             DateTime
+
+  account          Account  @relation(fields: [accountId], references: [accountId])
 }
 
 model PurchaseSummary {
   purchaseSummaryId String   @id
+  accountId         String
   totalPurchased    Float
   changePercentage  Float?
   date              DateTime
+
+  account           Account  @relation(fields: [accountId], references: [accountId])
 }
 
 model ExpenseSummary {
   expenseSummaryId  String              @id
+  accountId         String
   totalExpenses     Float
   date              DateTime
+
+  account           Account             @relation(fields: [accountId], references: [accountId])
   ExpenseByCategory ExpenseByCategory[]
 }
 
 model ExpenseByCategory {
   expenseByCategoryId String         @id
+  accountId           String
   expenseSummaryId    String
   category            String
   amount              BigInt
   date                DateTime
+
+  account             Account        @relation(fields: [accountId], references: [accountId])
   expenseSummary      ExpenseSummary @relation(fields: [expenseSummaryId], references: [expenseSummaryId])
 }

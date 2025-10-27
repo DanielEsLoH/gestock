@@ -1,0 +1,11 @@
+[
+  {
+    "accountId": "test-account-123",
+    "email": "demo@gestock.com",
+    "password": "$2b$10$pHBUJM0rj7tFRFd5cJY0vOH0iVwnCDg7rV9oSgdkJbQDLVumRstAm",
+    "name": "Demo User",
+    "companyName": "Demo Company",
+    "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2024-01-01T00:00:00.000Z"
+  }
+]

@@ -30,7 +30,7 @@ export interface PurchaseSummary {
 }
 
 export interface ExpenseSummary {
-  expenseSummarId: string;
+  expenseSummaryId: string;
   totalExpenses: number;
   date: string;
 }
@@ -50,16 +50,50 @@ export interface DashboardMetrics {
   expenseByCategorySummary: ExpenseByCategorySummary[];
 }
 
-export interface User {
-  userId: string;
+export interface Customer {
+  customerId: string;
   name: string;
   email: string;
 }
 
+export interface Account {
+  accountId: string;
+  email: string;
+  name: string;
+  companyName?: string;
+}
+
+export interface LoginRequest {
+  email: string;
+  password: string;
+}
+
+export interface RegisterRequest {
+  email: string;
+  password: string;
+  name: string;
+  companyName?: string;
+}
+
+export interface AuthResponse {
+  success: boolean;
+  token: string;
+  account: Account;
+}
+
 export const api = createApi({
-  baseQuery: fetchBaseQuery({ baseUrl: process.env.NEXT_PUBLIC_API_URL }),
+  baseQuery: fetchBaseQuery({
+    baseUrl: process.env.NEXT_PUBLIC_API_URL,
+    prepareHeaders: (headers, { getState }) => {
+      const token = (getState() as any).auth.token;
+      if (token) {
+        headers.set('authorization', `Bearer ${token}`);
+      }
+      return headers;
+    },
+  }),
   reducerPath: "api",
-  tagTypes: ["DashboardMetrics", "Products", "Users", "Expenses"],
+  tagTypes: ["DashboardMetrics", "Products", "Customers", "Expenses", "Auth"],
   endpoints: (build) => ({
     getDashboardMetrics: build.query<DashboardMetrics, void>({
       query: () => "/dashboard",
@@ -80,13 +114,33 @@ export const api = createApi({
       }),
       invalidatesTags: ["Products"],
     }),
-    getUsers: build.query<User[], void>({
-      query: () => "/users",
-      providesTags: ["Users"],
+    getCustomers: build.query<Customer[], void>({
+      query: () => "/customers",
+      providesTags: ["Customers"],
     }),
     getExpensesByCategory: build.query<ExpenseByCategorySummary[], void>({
       query: () => "/expenses",
       providesTags: ["Expenses"],
+    }),
+    login: build.mutation<AuthResponse, LoginRequest>({
+      query: (credentials) => ({
+        url: "/auth/login",
+        method: "POST",
+        body: credentials,
+      }),
+      invalidatesTags: ["Auth"],
+    }),
+    register: build.mutation<AuthResponse, RegisterRequest>({
+      query: (data) => ({
+        url: "/auth/register",
+        method: "POST",
+        body: data,
+      }),
+      invalidatesTags: ["Auth"],
+    }),
+    getMe: build.query<{ success: boolean; account: Account }, void>({
+      query: () => "/auth/me",
+      providesTags: ["Auth"],
     }),
   }),
 });
@@ -95,6 +149,9 @@ export const {
   useGetDashboardMetricsQuery,
   useGetProductsQuery,
   useCreateProductMutation,
-  useGetUsersQuery,
+  useGetCustomersQuery,
   useGetExpensesByCategoryQuery,
+  useLoginMutation,
+  useRegisterMutation,
+  useGetMeQuery,
 } = api;

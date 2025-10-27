@@ -1,11 +1,13 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.getExpensesByCategory = void 0;
-const client_1 = require("@prisma/client");
-const prisma = new client_1.PrismaClient();
+const prisma_1 = require("../lib/prisma");
 const getExpensesByCategory = async (req, res) => {
     try {
-        const expenseByCategorySummaryRaw = await prisma.expenseByCategory.findMany({
+        // Get accountId from auth middleware
+        const accountId = req.accountId;
+        const expenseByCategorySummaryRaw = await prisma_1.prisma.expenseByCategory.findMany({
+            where: { accountId },
             orderBy: {
                 date: "desc",
             },
@@ -17,7 +19,12 @@ const getExpensesByCategory = async (req, res) => {
         res.json(expenseByCategorySummary);
     }
     catch (error) {
-        res.status(500).json({ message: "Error retrieving expenses by category" });
+        console.error("Error retrieving expenses by category:", error);
+        res.status(500).json({
+            success: false,
+            message: "Error retrieving expenses by category",
+            ...(process.env.NODE_ENV === "development" && { error: String(error) })
+        });
     }
 };
 exports.getExpensesByCategory = getExpensesByCategory;

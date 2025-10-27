@@ -1,12 +1,11 @@
 "use client";
 
 import { useCreateProductMutation, useGetProductsQuery } from "@/state/api";
-import { PlusCircleIcon, SearchIcon } from "lucide-react";
+import { Package, PlusCircleIcon, SearchIcon } from "lucide-react";
 import { useState } from "react";
-import Header from "@/app/(components)/Header";
-import Rating from "@/app/(components)/Rating";
-import CreateProductModal from "./CreateProductModal";
-// import Image from "next/image";
+import Header from "@/app/_components/Header";
+import Rating from "@/app/_components/Rating";
+import CreateProductModal from "./components/CreateProductModal";
 
 type ProductFormData = {
   name: string;
@@ -80,16 +79,9 @@ const Products = () => {
               className="border shadow rounded-md p-4 max-w-full w-full mx-auto"
             >
               <div className="flex flex-col items-center">
-                {/* <Image
-                  src={`https://s3-inventorymanagement.s3.us-east-2.amazonaws.com/product${
-                    Math.floor(Math.random() * 3) + 1
-                  }.png`}
-                  alt={product.name}
-                  width={150}
-                  height={150}
-                  className="mb-3 rounded-2xl w-36 h-36"
-                /> */}
-                img
+                <div className="w-36 h-36 bg-gray-200 rounded-2xl mb-3 flex items-center justify-center">
+                  <Package className="w-16 h-16 text-gray-400" />
+                </div>
                 <h3 className="text-lg text-gray-900 font-semibold">
                   {product.name}
                 </h3>

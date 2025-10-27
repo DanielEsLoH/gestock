@@ -2,9 +2,14 @@ import { fileURLToPath } from "url";
 import { dirname } from "path";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
+import { config } from "dotenv";
 import { PrismaClient } from "@prisma/client";
 import * as fs from "fs";
 import * as path from "path";
+
+// Load environment variables from .env file
+config({ path: path.join(__dirname, "..", ".env") });
+
 const prisma = new PrismaClient();
 
 async function deleteAllData(orderedFileNames: string[]) {
@@ -13,7 +18,8 @@ async function deleteAllData(orderedFileNames: string[]) {
     return modelName.charAt(0).toUpperCase() + modelName.slice(1);
   });
 
-  for (const modelName of modelNames) {
+  // Delete in reverse order to respect foreign key constraints
+  for (const modelName of modelNames.reverse()) {
     const model: any = prisma[modelName as keyof typeof prisma];
     if (model) {
       await model.deleteMany({});
@@ -30,13 +36,14 @@ async function main() {
   const dataDirectory = path.join(__dirname, "seedData");
 
   const orderedFileNames = [
+    "account.json",
     "products.json",
     "expenseSummary.json",
     "sales.json",
     "salesSummary.json",
     "purchases.json",
     "purchaseSummary.json",
-    "users.json",
+    "customer.json",
     "expenses.json",
     "expenseByCategory.json",
   ];
