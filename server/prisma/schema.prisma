@@ -26,12 +26,14 @@ model Account {
   customers         Customer[]
   products          Products[]
   sales             Sales[]
+  saleOrders        SaleOrder[]
   purchases         Purchases[]
   expenses          Expenses[]
   salesSummary      SalesSummary[]
   purchaseSummary   PurchaseSummary[]
   expenseSummary    ExpenseSummary[]
   expenseByCategory ExpenseByCategory[]
+  invoiceCounters   InvoiceCounter[]
 }
 
 model Customer {
@@ -40,7 +42,8 @@ model Customer {
   name       String
   email      String
 
-  account    Account @relation(fields: [accountId], references: [accountId])
+  account    Account     @relation(fields: [accountId], references: [accountId])
+  saleOrders SaleOrder[]
 }
 
 model Products {
@@ -53,6 +56,7 @@ model Products {
 
   account       Account     @relation(fields: [accountId], references: [accountId])
   Sales         Sales[]
+  SaleItems     SaleItem[]
   Purchases     Purchases[]
 }
 
@@ -67,6 +71,39 @@ model Sales {
 
   account     Account  @relation(fields: [accountId], references: [accountId])
   product     Products @relation(fields: [productId], references: [productId])
+}
+
+model SaleOrder {
+  saleOrderId    String   @id @default(uuid())
+  accountId      String
+  customerId     String?
+  invoiceNumber  String
+  subtotal       Float
+  tax            Float    @default(0)
+  discount       Float    @default(0)
+  totalAmount    Float
+  status         String   @default("completed") // completed, pending, cancelled
+  paymentMethod  String?  // cash, card, credit
+  notes          String?
+  createdAt      DateTime @default(now())
+
+  account        Account    @relation(fields: [accountId], references: [accountId])
+  customer       Customer?  @relation(fields: [customerId], references: [customerId])
+  items          SaleItem[]
+
+  @@unique([accountId, invoiceNumber])
+}
+
+model SaleItem {
+  saleItemId  String  @id @default(uuid())
+  saleOrderId String
+  productId   String
+  quantity    Int
+  unitPrice   Float
+  totalPrice  Float
+
+  saleOrder   SaleOrder @relation(fields: [saleOrderId], references: [saleOrderId], onDelete: Cascade)
+  product     Products  @relation(fields: [productId], references: [productId])
 }
 
 model Purchases {
@@ -132,4 +169,16 @@ model ExpenseByCategory {
 
   account             Account        @relation(fields: [accountId], references: [accountId])
   expenseSummary      ExpenseSummary @relation(fields: [expenseSummaryId], references: [expenseSummaryId])
+}
+
+model InvoiceCounter {
+  id            String @id @default(uuid())
+  accountId     String
+  year          Int
+  month         Int
+  currentNumber Int    @default(0)
+
+  account       Account @relation(fields: [accountId], references: [accountId])
+
+  @@unique([accountId, year, month])
 }

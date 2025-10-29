@@ -4,51 +4,55 @@ import { useGetProductsQuery } from "@/state/api";
 import { useAppSelector } from "@/app/redux";
 import Header from "@/app/_components/Header";
 import { DataGrid, GridColDef } from "@mui/x-data-grid";
+import { formatCurrency } from "@/lib/currency";
 
-const columns: GridColDef[] = [
-  { field: "productId", headerName: "ID", width: 90 },
-  { field: "name", headerName: "Product Name", width: 200 },
-  {
-    field: "price",
-    headerName: "Price",
-    width: 110,
-    type: "number",
-    valueGetter: (value, row) => `$${row.price}`,
-  },
-  {
-    field: "rating",
-    headerName: "Rating",
-    width: 110,
-    type: "number",
-    valueGetter: (value, row) => (row.rating ? row.rating : "N/A"),
-  },
-  {
-    field: "stockQuantity",
-    headerName: "Stock Quantity",
-    width: 150,
-    type: "number",
-  },
-];
+import { useTranslation } from "react-i18next";
 
 const Inventory = () => {
+  const { t } = useTranslation();
   const { data: products, isError, isLoading } = useGetProductsQuery();
   const isDarkMode = useAppSelector((state) => state.global.isDarkMode);
 
+  const columns: GridColDef[] = [
+    { field: "productId", headerName: t("Inventory.id"), width: 90 },
+    { field: "name", headerName: t("Inventory.productName"), width: 200 },
+    {
+      field: "price",
+      headerName: t("Inventory.price"),
+      width: 110,
+      type: "number",
+      valueGetter: (value, row) => formatCurrency(row.price),
+    },
+    {
+      field: "rating",
+      headerName: t("Inventory.rating"),
+      width: 110,
+      type: "number",
+      valueGetter: (value, row) => (row.rating ? row.rating : "N/A"),
+    },
+    {
+      field: "stockQuantity",
+      headerName: t("Inventory.stockQuantity"),
+      width: 150,
+      type: "number",
+    },
+  ];
+
   if (isLoading) {
-    return <div className="py-4">Loading...</div>;
+    return <div className="py-4">{t("Inventory.loading")}</div>;
   }
 
   if (isError || !products) {
     return (
       <div className="text-center text-red-500 py-4">
-        Failed to fetch products
+        {t("Inventory.error")}
       </div>
     );
   }
 
   return (
     <div className="flex flex-col">
-      <Header name="Inventory" />
+      <Header name={t("Inventory.title")} />
       <DataGrid
         rows={products}
         columns={columns}

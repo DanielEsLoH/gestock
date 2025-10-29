@@ -1,6 +1,14 @@
 import { Request, Response, NextFunction } from "express";
 import jwt from "jsonwebtoken";
 
+declare module "express" {
+  export interface Request {
+    user?: {
+      id: string;
+    };
+  }
+}
+
 const JWT_SECRET = process.env.JWT_SECRET || "your-secret-key-change-in-production";
 
 interface JwtPayload {
@@ -28,9 +36,8 @@ export const authMiddleware = (
 
     const decoded = jwt.verify(token, JWT_SECRET) as JwtPayload;
 
-    // Attach accountId and email to request object
+    // Attach accountId to request object
     (req as any).accountId = decoded.accountId;
-    (req as any).email = decoded.email;
 
     next();
   } catch (error) {

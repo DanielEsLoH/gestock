@@ -12,15 +12,27 @@ config({ path: path.join(__dirname, "..", ".env") });
 
 const prisma = new PrismaClient();
 
-async function deleteAllData(orderedFileNames: string[]) {
-  const modelNames = orderedFileNames.map((fileName) => {
-    const modelName = path.basename(fileName, path.extname(fileName));
-    return modelName.charAt(0).toUpperCase() + modelName.slice(1);
-  });
+async function deleteAllData() {
+  // Manually specify the order of deletion
+  const modelNames = [
+    "SaleItem",
+    "SaleOrder",
+    "Sales",
+    "Purchases",
+    "Products",
+    "Customer",
+    "Expenses",
+    "ExpenseByCategory",
+    "ExpenseSummary",
+    "SalesSummary",
+    "PurchaseSummary",
+    "InvoiceCounter",
+    "Account",
+  ];
 
   // Delete in reverse order to respect foreign key constraints
-  for (const modelName of modelNames.reverse()) {
-    const model: any = prisma[modelName as keyof typeof prisma];
+  for (const modelName of modelNames) {
+    const model: any = prisma[modelName.charAt(0).toLowerCase() + modelName.slice(1) as keyof typeof prisma];
     if (model) {
       await model.deleteMany({});
       console.log(`Cleared data from ${modelName}`);
@@ -37,18 +49,18 @@ async function main() {
 
   const orderedFileNames = [
     "account.json",
-    "products.json",
-    "expenseSummary.json",
-    "sales.json",
-    "salesSummary.json",
-    "purchases.json",
-    "purchaseSummary.json",
     "customer.json",
+    "products.json",
+    "sales.json",
+    "purchases.json",
     "expenses.json",
+    "salesSummary.json",
+    "purchaseSummary.json",
+    "expenseSummary.json",
     "expenseByCategory.json",
   ];
 
-  await deleteAllData(orderedFileNames);
+  await deleteAllData();
 
   for (const fileName of orderedFileNames) {
     const filePath = path.join(dataDirectory, fileName);

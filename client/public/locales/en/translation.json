@@ -1,0 +1,121 @@
+{
+  "Settings": {
+    "title": "Settings",
+    "profile": "Profile",
+    "appearance": "Appearance",
+    "language": "Language",
+    "name": "Name",
+    "email": "Email",
+    "darkMode": "Dark Mode",
+    "english": "English",
+    "spanish": "Spanish",
+    "save": "Save",
+    "saving": "Saving...",
+    "password": "Password",
+    "currentPassword": "Current Password",
+    "newPassword": "New Password",
+    "confirmNewPassword": "Confirm New Password",
+    "passwordMismatch": "New password and confirm new password do not match.",
+    "passwordChangeSuccess": "Password updated successfully!",
+    "passwordChangeError": "Failed to update password. Please check your current password."
+  },
+  "Navbar": {
+    "searchPlaceholder": "Start typing to search groups & products",
+    "logout": "Logout"
+  },
+  "Sidebar": {
+    "dashboard": "Dashboard",
+    "inventory": "Inventory",
+    "products": "Products",
+    "sales": "Sales",
+    "purchases": "Purchases",
+    "customers": "Customers",
+    "settings": "Settings",
+    "expenses": "Expenses"
+  },
+  "Login": {
+    "welcome": "Welcome to Gestock",
+    "signIn": "Sign in to your account",
+    "email": "Email Address",
+    "password": "Password",
+    "passwordPlaceholder": "Enter your password",
+    "formError": "Invalid email or password. Please try again.",
+    "signingIn": "Signing in...",
+    "signInButton": "Sign In",
+    "noAccount": "Don't have an account?",
+    "createOne": "Create one",
+    "demoAccount": "Demo Account: demo@gestock.com / password123"
+  },
+  "Dashboard": {
+    "loading": "Loading...",
+    "error": "Error loading dashboard data.",
+    "daily": "Daily",
+    "weekly": "Weekly",
+    "monthly": "Monthly",
+    "customerExpenses": "Customer & Expenses",
+    "customerGrowth": "Customer Growth",
+    "expenses": "Expenses",
+    "duesPendingOrders": "Dues & Pending Orders",
+    "dues": "Dues",
+    "pendingOrders": "Pending Orders",
+    "salesDiscounts": "Sales & Discounts",
+    "sales": "Sales",
+    "discount": "Discount"
+  },
+  "CardSalesSummary": {
+    "title": "Sales Summary",
+    "totalValue": "Total Value",
+    "dataPoints": "data points",
+    "highestSalesDate": "Highest Sales Date"
+  },
+  "CardPurchaseSummary": {
+    "title": "Purchase Summary",
+    "totalPurchased": "Total Purchased"
+  },
+  "CardPopularProducts": {
+    "title": "Popular Products",
+    "sold": "Sold"
+  },
+  "Customers": {
+    "title": "Customers",
+    "id": "ID",
+    "name": "Name",
+    "email": "Email",
+    "loading": "Loading...",
+    "error": "Failed to fetch customers",
+    "addCustomer": "Add Customer"
+  },
+  "CreateCustomerModal": {
+    "title": "Create New Customer",
+    "customerName": "Customer Name",
+    "namePlaceholder": "Name",
+    "email": "Email",
+    "emailPlaceholder": "Email",
+    "create": "Create",
+    "cancel": "Cancel"
+  },
+  "Expenses": {
+    "title": "Expenses",
+    "description": "A visual representation of expenses over time.",
+    "loading": "Loading...",
+    "error": "Failed to fetch expenses",
+    "filterTitle": "Filter by Category and Date",
+    "category": "Category",
+    "all": "All",
+    "office": "Office",
+    "professional": "Professional",
+    "salaries": "Salaries",
+    "startDate": "Start Date",
+    "endDate": "End Date"
+  },
+  "Inventory": {
+    "title": "Inventory",
+    "id": "ID",
+    "productName": "Product Name",
+    "price": "Price",
+    "rating": "Rating",
+    "stockQuantity": "Stock Quantity",
+    "loading": "Loading...",
+    "error": "Failed to fetch products"
+  }
+}

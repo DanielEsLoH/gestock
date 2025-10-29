@@ -73,10 +73,12 @@ export const register = async (req: Request, res: Response): Promise<void> => {
 
 export const login = async (req: Request, res: Response): Promise<void> => {
   try {
+    console.log("Login attempt with body:", req.body);
     const { email, password } = req.body;
 
     // Validate required fields
     if (!email || !password) {
+      console.log("Login failed: Email or password not provided.");
       res.status(400).json({
         success: false,
         message: "Email and password are required"
@@ -89,7 +91,10 @@ export const login = async (req: Request, res: Response): Promise<void> => {
       where: { email }
     });
 
+    console.log("Account found:", account);
+
     if (!account) {
+      console.log("Login failed: Account not found.");
       res.status(401).json({
         success: false,
         message: "Invalid credentials"
@@ -99,8 +104,10 @@ export const login = async (req: Request, res: Response): Promise<void> => {
 
     // Verify password
     const isValidPassword = await bcrypt.compare(password, account.password);
+    console.log("Password validation result:", isValidPassword);
 
     if (!isValidPassword) {
+      console.log("Login failed: Invalid password.");
       res.status(401).json({
         success: false,
         message: "Invalid credentials"
@@ -115,6 +122,7 @@ export const login = async (req: Request, res: Response): Promise<void> => {
       { expiresIn: "7d" }
     );
 
+    console.log("Login successful, token generated.");
     res.json({
       success: true,
       token,

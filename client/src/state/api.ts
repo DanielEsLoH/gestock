@@ -6,6 +6,7 @@ export interface Product {
   price: number;
   rating?: number;
   stockQuantity: number;
+  quantitySold?: number;
 }
 
 export interface NewProduct {
@@ -16,30 +17,24 @@ export interface NewProduct {
 }
 
 export interface SalesSummary {
-  salesSummaryId: string;
-  totalValue: number;
-  changePercentage?: number;
   date: string;
+  totalValue: number;
 }
 
 export interface PurchaseSummary {
-  purchaseSummaryId: string;
-  totalPurchased: number;
-  changePercentage?: number;
   date: string;
+  totalPurchased: number;
 }
 
 export interface ExpenseSummary {
-  expenseSummaryId: string;
-  totalExpenses: number;
   date: string;
+  totalExpenses: number;
 }
 
 export interface ExpenseByCategorySummary {
-  expenseByCategorySummaryId: string;
-  category: string;
-  amount: string;
   date: string;
+  category: string;
+  amount: number;
 }
 
 export interface DashboardMetrics {
@@ -54,6 +49,82 @@ export interface Customer {
   customerId: string;
   name: string;
   email: string;
+}
+
+export interface Sale {
+  saleId: string;
+  accountId: string;
+  productId: string;
+  timestamp: string;
+  quantity: number;
+  unitPrice: number;
+  totalAmount: number;
+  product: Product;
+}
+
+export interface NewSale {
+  productId: string;
+  quantity: number;
+  unitPrice: number;
+  timestamp?: string;
+}
+
+export interface SaleItem {
+  saleItemId: string;
+  saleOrderId: string;
+  productId: string;
+  quantity: number;
+  unitPrice: number;
+  totalPrice: number;
+  product: Product;
+}
+
+export interface SaleOrder {
+  saleOrderId: string;
+  accountId: string;
+  customerId?: string;
+  invoiceNumber: string;
+  subtotal: number;
+  tax: number;
+  discount: number;
+  totalAmount: number;
+  status: string;
+  paymentMethod?: string;
+  notes?: string;
+  createdAt: string;
+  customer?: Customer;
+  items: SaleItem[];
+}
+
+export interface NewSaleOrder {
+  items: {
+    productId: string;
+    quantity: number;
+    unitPrice: number;
+  }[];
+  customerId?: string;
+  tax?: number;
+  discount?: number;
+  paymentMethod?: string;
+  notes?: string;
+}
+
+export interface Purchase {
+  purchaseId: string;
+  accountId: string;
+  productId: string;
+  timestamp: string;
+  quantity: number;
+  unitCost: number;
+  totalCost: number;
+  product: Product;
+}
+
+export interface NewPurchase {
+  productId: string;
+  quantity: number;
+  unitCost: number;
+  timestamp?: string;
 }
 
 export interface Account {
@@ -87,16 +158,29 @@ export const api = createApi({
     prepareHeaders: (headers, { getState }) => {
       const token = (getState() as any).auth.token;
       if (token) {
-        headers.set('authorization', `Bearer ${token}`);
+        headers.set("authorization", `Bearer ${token}`);
       }
       return headers;
     },
   }),
   reducerPath: "api",
-  tagTypes: ["DashboardMetrics", "Products", "Customers", "Expenses", "Auth"],
+  tagTypes: [
+    "DashboardMetrics",
+    "Products",
+    "Customers",
+    "Expenses",
+    "Sales",
+    "SaleOrders",
+    "Purchases",
+    "Auth",
+    "User",
+  ],
   endpoints: (build) => ({
-    getDashboardMetrics: build.query<DashboardMetrics, void>({
-      query: () => "/dashboard",
+    getDashboardMetrics: build.query<DashboardMetrics, string | void>({
+      query: (timeframe) => ({
+        url: "/dashboard",
+        params: timeframe ? { timeframe } : {},
+      }),
       providesTags: ["DashboardMetrics"],
     }),
     getProducts: build.query<Product[], string | void>({
@@ -114,9 +198,57 @@ export const api = createApi({
       }),
       invalidatesTags: ["Products"],
     }),
+    updateProduct: build.mutation<
+      Product,
+      Partial<Product> & Pick<Product, "productId">
+    >({
+      query: ({ productId, ...patch }) => ({
+        url: `/products/${productId}`,
+        method: "PUT",
+        body: patch,
+      }),
+      invalidatesTags: ["Products"],
+    }),
+    deleteProduct: build.mutation<{ success: boolean; id: string }, string>({
+      query: (id) => ({
+        url: `/products/${id}`,
+        method: "DELETE",
+      }),
+      invalidatesTags: ["Products"],
+    }),
+    updateUser: build.mutation<any, Partial<Account>>({
+      query: (data) => ({
+        url: `/user`,
+        method: "PUT",
+        body: data,
+      }),
+      invalidatesTags: ["User"],
+    }),
+    changePassword: build.mutation<
+      {
+        success: boolean;
+        message: string;
+      },
+      { currentPassword: string; newPassword: string }
+    >({
+      query: ({ currentPassword, newPassword }) => ({
+        url: "/user/password",
+        method: "PUT",
+        body: { currentPassword, newPassword },
+      }),
+      invalidatesTags: ["Auth"],
+    }),
     getCustomers: build.query<Customer[], void>({
       query: () => "/customers",
       providesTags: ["Customers"],
+    }),
+    createCustomer: build.mutation<Customer, Partial<Customer>>({
+      query: (newCustomer) => ({
+        url: "/customers",
+        method: "POST",
+        body: newCustomer,
+      }),
+      invalidatesTags: ["Customers"],
     }),
     getExpensesByCategory: build.query<ExpenseByCategorySummary[], void>({
       query: () => "/expenses",
@@ -142,6 +274,46 @@ export const api = createApi({
       query: () => "/auth/me",
       providesTags: ["Auth"],
     }),
+    getSales: build.query<Sale[], void>({
+      query: () => "/sales",
+      providesTags: ["Sales"],
+    }),
+    createSale: build.mutation<Sale, NewSale>({
+      query: (newSale) => ({
+        url: "/sales",
+        method: "POST",
+        body: newSale,
+      }),
+      invalidatesTags: ["Sales", "Products", "DashboardMetrics"],
+    }),
+    getSaleOrders: build.query<SaleOrder[], void>({
+      query: () => "/sales/orders",
+      providesTags: ["SaleOrders"],
+    }),
+    getSaleOrderById: build.query<SaleOrder, string>({
+      query: (id) => `/sales/orders/${id}`,
+      providesTags: ["SaleOrders"],
+    }),
+    createSaleOrder: build.mutation<SaleOrder, NewSaleOrder>({
+      query: (newSaleOrder) => ({
+        url: "/sales/orders",
+        method: "POST",
+        body: newSaleOrder,
+      }),
+      invalidatesTags: ["SaleOrders", "Products", "DashboardMetrics"],
+    }),
+    getPurchases: build.query<Purchase[], void>({
+      query: () => "/purchases",
+      providesTags: ["Purchases"],
+    }),
+    createPurchase: build.mutation<Purchase, NewPurchase>({
+      query: (newPurchase) => ({
+        url: "/purchases",
+        method: "POST",
+        body: newPurchase,
+      }),
+      invalidatesTags: ["Purchases", "Products", "DashboardMetrics"],
+    }),
   }),
 });
 
@@ -149,9 +321,21 @@ export const {
   useGetDashboardMetricsQuery,
   useGetProductsQuery,
   useCreateProductMutation,
+  useUpdateProductMutation,
+  useDeleteProductMutation,
+  useUpdateUserMutation,
+  useChangePasswordMutation,
   useGetCustomersQuery,
+  useCreateCustomerMutation,
   useGetExpensesByCategoryQuery,
   useLoginMutation,
   useRegisterMutation,
   useGetMeQuery,
+  useGetSalesQuery,
+  useCreateSaleMutation,
+  useGetSaleOrdersQuery,
+  useGetSaleOrderByIdQuery,
+  useCreateSaleOrderMutation,
+  useGetPurchasesQuery,
+  useCreatePurchaseMutation,
 } = api;

@@ -1,0 +1,121 @@
+{
+  "Settings": {
+    "title": "Configuración",
+    "profile": "Perfil",
+    "appearance": "Apariencia",
+    "language": "Idioma",
+    "name": "Nombre",
+    "email": "Correo electrónico",
+    "darkMode": "Modo oscuro",
+    "english": "Inglés",
+    "spanish": "Español",
+    "save": "Guardar",
+    "saving": "Guardando...",
+    "password": "Contraseña",
+    "currentPassword": "Contraseña Actual",
+    "newPassword": "Nueva Contraseña",
+    "confirmNewPassword": "Confirmar Nueva Contraseña",
+    "passwordMismatch": "La nueva contraseña y la confirmación de la nueva contraseña no coinciden.",
+    "passwordChangeSuccess": "Contraseña actualizada correctamente.",
+    "passwordChangeError": "Error al actualizar la contraseña. Por favor, verifica tu contraseña actual."
+  },
+  "Navbar": {
+    "searchPlaceholder": "Empieza a escribir para buscar grupos y productos",
+    "logout": "Cerrar sesión"
+  },
+  "Sidebar": {
+    "dashboard": "Tablero",
+    "inventory": "Inventario",
+    "products": "Productos",
+    "sales": "Ventas",
+    "purchases": "Compras",
+    "customers": "Clientes",
+    "settings": "Configuración",
+    "expenses": "Gastos"
+  },
+  "Login": {
+    "welcome": "Bienvenido a Gestock",
+    "signIn": "Inicia sesión en tu cuenta",
+    "email": "Dirección de correo electrónico",
+    "password": "Contraseña",
+    "passwordPlaceholder": "Ingresa tu contraseña",
+    "formError": "Correo electrónico o contraseña no válidos. Inténtalo de nuevo.",
+    "signingIn": "Iniciando sesión...",
+    "signInButton": "Iniciar sesión",
+    "noAccount": "¿No tienes una cuenta?",
+    "createOne": "Crea una",
+    "demoAccount": "Cuenta de demostración: demo@gestock.com / password123"
+  },
+  "Dashboard": {
+    "loading": "Cargando...",
+    "error": "Error al cargar los datos del tablero.",
+    "daily": "Diario",
+    "weekly": "Semanal",
+    "monthly": "Mensual",
+    "customerExpenses": "Clientes y Gastos",
+    "customerGrowth": "Crecimiento de clientes",
+    "expenses": "Gastos",
+    "duesPendingOrders": "Deudas y Pedidos Pendientes",
+    "dues": "Deudas",
+    "pendingOrders": "Pedidos Pendientes",
+    "salesDiscounts": "Ventas y Descuentos",
+    "sales": "Ventas",
+    "discount": "Descuento"
+  },
+  "CardSalesSummary": {
+    "title": "Resumen de Ventas",
+    "totalValue": "Valor Total",
+    "dataPoints": "puntos de datos",
+    "highestSalesDate": "Fecha de Ventas Más Alta"
+  },
+  "CardPurchaseSummary": {
+    "title": "Resumen de Compras",
+    "totalPurchased": "Total Comprado"
+  },
+  "CardPopularProducts": {
+    "title": "Productos Populares",
+    "sold": "Vendidos"
+  },
+  "Customers": {
+    "title": "Clientes",
+    "id": "ID",
+    "name": "Nombre",
+    "email": "Correo electrónico",
+    "loading": "Cargando...",
+    "error": "Error al cargar los clientes",
+    "addCustomer": "Agregar Cliente"
+  },
+  "CreateCustomerModal": {
+    "title": "Crear Nuevo Cliente",
+    "customerName": "Nombre del Cliente",
+    "namePlaceholder": "Nombre",
+    "email": "Correo electrónico",
+    "emailPlaceholder": "Correo electrónico",
+    "create": "Crear",
+    "cancel": "Cancelar"
+  },
+  "Expenses": {
+    "title": "Gastos",
+    "description": "Una representación visual de los gastos a lo largo del tiempo.",
+    "loading": "Cargando...",
+    "error": "Error al cargar los gastos",
+    "filterTitle": "Filtrar por Categoría y Fecha",
+    "category": "Categoría",
+    "all": "Todos",
+    "office": "Oficina",
+    "professional": "Profesional",
+    "salaries": "Salarios",
+    "startDate": "Fecha de Inicio",
+    "endDate": "Fecha de Fin"
+  },
+  "Inventory": {
+    "title": "Inventario",
+    "id": "ID",
+    "productName": "Nombre del Producto",
+    "price": "Precio",
+    "rating": "Calificación",
+    "stockQuantity": "Cantidad en Stock",
+    "loading": "Cargando...",
+    "error": "Error al cargar los productos"
+  }
+}

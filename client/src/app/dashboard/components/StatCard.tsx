@@ -42,8 +42,8 @@ const StatCard = ({
           {primaryIcon}
         </div>
         <div className="flex-1">
-          {details.map((detail, index) => (
-            <React.Fragment key={index}>
+          {details.map((detail) => (
+            <div key={detail.title}>
               <div className="flex items-center justify-between my-4">
                 <span className="text-gray-500">{detail.title}</span>
                 <span className="font-bold text-gray-800">{detail.amount}</span>
@@ -62,8 +62,8 @@ const StatCard = ({
                   </span>
                 </div>
               </div>
-              {index < details.length - 1 && <hr />}
-            </React.Fragment>
+              {details.indexOf(detail) < details.length - 1 && <hr />}
+            </div>
           ))}
         </div>
       </div>

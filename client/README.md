@@ -1,4 +1,26 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Gestock Client Application
+
+This is the frontend client application for Gestock, a stock management web application. It provides a user-friendly interface for managing products, customers, sales, purchases, and expenses.
+
+## Main Technologies
+
+*   **Framework:** [Next.js](https://nextjs.org/) (v15.5.2)
+*   **Language:** [TypeScript](https://www.typescriptlang.org/)
+*   **Styling:** [Tailwind CSS](https://tailwindcss.com/) with Material UI
+*   **State Management:** [Redux Toolkit](https://redux-toolkit.js.org/)
+*   **Data Fetching:** [Axios](https://axios-http.com/)
+*   **Charting:** [Recharts](https://recharts.org/)
+*   **Internationalization:** [i18next](https://www.i18next.com/)
+
+## Key Features & Improvements
+
+*   **Multi-tenancy Support:** Data is now properly isolated between different user accounts, ensuring each user has their own distinct data (products, customers, sales, etc.).
+*   **Internationalization (i18n):** The application is fully internationalized, allowing users to switch between English and Spanish from the settings page. All UI text is translated accordingly.
+*   **Refactored Settings Page:** The user settings page (`/settings`) has been redesigned with a modern, card-based layout. It includes:
+    *   Read-only display of user's name and email.
+    *   Integrated password change functionality, requiring the current password for verification.
+    *   Combined appearance (dark mode toggle) and language selection within the same page.
+*   **Removed Redundant Pages:** The `/users` page has been removed, with its functionality consolidated into the refactored `/settings` page.
 
 ## Getting Started
 
@@ -15,10 +37,6 @@ bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
 ## Learn More
 

@@ -1,9 +1,11 @@
 "use client";
-import React, { useEffect } from "react";
+import React, { useEffect, Suspense } from "react";
 import { useRouter, usePathname } from "next/navigation";
 import Navbar from "@/app/_components/Navbar";
 import Sidebar from "@/app/_components/Sidebar";
 import StoreProvider, { useAppSelector } from "./redux";
+import { I18nextProvider } from "react-i18next";
+import i18n from "../i18n";
 
 const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
   const isSidebarCollapsed = useAppSelector(
@@ -29,9 +31,9 @@ const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
     if (isDarkMode) {
       document.documentElement.classList.add("dark");
     } else {
-      document.documentElement.classList.remove("light");
+      document.documentElement.classList.remove("dark");
     }
-  });
+  }, [isDarkMode]);
 
   // Show loading or nothing while checking auth
   const publicPaths = ["/login", "/register"];
@@ -43,7 +45,7 @@ const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
 
   // For public paths (login/register), don't show sidebar/navbar
   if (isPublicPath) {
-    return <>{children}</>;
+    return <div key="public-path-children">{children}</div>;
   }
 
   return (
@@ -59,7 +61,7 @@ const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
         }`}
       >
         <Navbar />
-        {children}
+        <div key="dashboard-children">{children}</div>
       </main>
     </div>
   );
@@ -68,7 +70,11 @@ const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
 const DashboardWrapper = ({ children }: { children: React.ReactNode }) => {
   return (
     <StoreProvider>
-      <DashboardLayout>{children}</DashboardLayout>
+      <Suspense fallback={<div>Loading...</div>}>
+        <I18nextProvider i18n={i18n}>
+          <DashboardLayout>{children}</DashboardLayout>
+        </I18nextProvider>
+      </Suspense>
     </StoreProvider>
   );
 };

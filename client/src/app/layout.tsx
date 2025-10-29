@@ -1,34 +1,30 @@
+"use client";
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { metadata } from "./metadata";
 import "./globals.css";
+import i18n from "../i18n";
+import { I18nextProvider } from "react-i18next";
+
+import { Providers } from "@/state/provider";
 import DashboardWrapper from "./dashboardWrapper";
+import { Toaster } from "react-hot-toast";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
-export const metadata: Metadata = {
-  title: "Gestock - Inventory Management System",
-  description: "Complete inventory and sales management platform for tracking products, expenses, and analytics",
-};
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        <DashboardWrapper>{children}</DashboardWrapper>
+      <body className="antialiased">
+        <I18nextProvider i18n={i18n}>
+          <DashboardWrapper>
+            <Toaster />
+            {children}
+          </DashboardWrapper>
+        </I18nextProvider>
       </body>
     </html>
   );

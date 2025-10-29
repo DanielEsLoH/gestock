@@ -1,33 +1,56 @@
 "use client";
 
-import { useGetCustomersQuery } from "@/state/api";
+import { useState } from "react";
+import { useGetCustomersQuery, useCreateCustomerMutation } from "@/state/api";
 import { useAppSelector } from "@/app/redux";
 import Header from "@/app/_components/Header";
 import { DataGrid, GridColDef } from "@mui/x-data-grid";
+import CreateCustomerModal from "./components/CreateCustomerModal";
 
-const columns: GridColDef[] = [
-  { field: "customerId", headerName: "ID", width: 90 },
-  { field: "name", headerName: "Name", width: 200 },
-  { field: "email", headerName: "Email", width: 200 },
-];
+import { useTranslation } from "react-i18next";
 
 const Customers = () => {
+  const { t } = useTranslation();
   const { data: customers, isError, isLoading } = useGetCustomersQuery();
+  const [createCustomer] = useCreateCustomerMutation();
   const isDarkMode = useAppSelector((state) => state.global.isDarkMode);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const columns: GridColDef[] = [
+    { field: "customerId", headerName: t("Customers.id"), width: 90 },
+    { field: "name", headerName: t("Customers.name"), width: 200 },
+    { field: "email", headerName: t("Customers.email"), width: 200 },
+  ];
+
+  const handleCreateCustomer = async (formData: { name: string; email: string }) => {
+    try {
+      await createCustomer(formData).unwrap();
+    } catch (error) {
+      console.error("Failed to create customer:", error);
+    }
+  };
 
   if (isLoading) {
-    return <div className="py-4">Loading...</div>;
+    return <div className="py-4">{t("Customers.loading")}</div>;
   }
 
   if (isError || !customers) {
     return (
-      <div className="text-center text-red-500 py-4">Failed to fetch customers</div>
+      <div className="text-center text-red-500 py-4">{t("Customers.error")}</div>
     );
   }
 
   return (
     <div className="flex flex-col">
-      <Header name="Customers" />
+      <div className="flex justify-between items-center">
+        <Header name={t("Customers.title")} />
+        <button
+          onClick={() => setIsModalOpen(true)}
+          className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700"
+        >
+          {t("Customers.addCustomer")}
+        </button>
+      </div>
       <DataGrid
         rows={customers}
         columns={columns}
@@ -101,6 +124,11 @@ const Customers = () => {
             color: isDarkMode ? "rgb(156, 163, 175)" : "rgb(107, 114, 128)",
           },
         }}
+      />
+      <CreateCustomerModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        onCreate={handleCreateCustomer}
       />
     </div>
   );

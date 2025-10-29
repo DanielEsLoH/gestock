@@ -1,22 +1,25 @@
 "use client";
 
-import { useCreateProductMutation, useGetProductsQuery } from "@/state/api";
+import {
+  useCreateProductMutation,
+  useDeleteProductMutation,
+  useGetProductsQuery,
+  useUpdateProductMutation,
+} from "@/state/api";
 import { Package, PlusCircleIcon, SearchIcon } from "lucide-react";
 import { useState } from "react";
 import Header from "@/app/_components/Header";
 import Rating from "@/app/_components/Rating";
-import CreateProductModal from "./components/CreateProductModal";
+import ProductModal from "./components/ProductModal";
+import { Product } from "@/state/api";
 
-type ProductFormData = {
-  name: string;
-  price: number;
-  stockQuantity: number;
-  rating: number;
-};
+import { useTranslation } from "react-i18next";
 
 const Products = () => {
+  const { t } = useTranslation();
   const [searchTerm, setSearchTerm] = useState("");
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
 
   const {
     data: products,
@@ -25,18 +28,36 @@ const Products = () => {
   } = useGetProductsQuery(searchTerm);
 
   const [createProduct] = useCreateProductMutation();
-  const handleCreateProduct = async (productData: ProductFormData) => {
-    await createProduct(productData);
+  const [updateProduct] = useUpdateProductMutation();
+  const [deleteProduct] = useDeleteProductMutation();
+
+  const handleSaveProduct = async (productData: Partial<Product>) => {
+    if (selectedProduct) {
+      await updateProduct({ ...productData, productId: selectedProduct.productId });
+    } else {
+      await createProduct(productData as Product);
+    }
+  };
+
+  const handleEdit = (product: Product) => {
+    setSelectedProduct(product);
+    setIsModalOpen(true);
+  };
+
+  const handleDelete = async (productId: string) => {
+    if (window.confirm(t("Products.deleteConfirmation"))) {
+      await deleteProduct(productId);
+    }
   };
 
   if (isLoading) {
-    return <div className="py-4">Loading...</div>;
+    return <div className="py-4">{t("Products.loading")}</div>;
   }
 
   if (isError || !products) {
     return (
       <div className="text-center text-red-500 py-4">
-        Failed to fetch products
+        {t("Products.error")}
       </div>
     );
   }
@@ -49,7 +70,7 @@ const Products = () => {
           <SearchIcon className="w-5 h-5 text-gray-500 m-2" />
           <input
             className="w-full py-2 px-4 rounded bg-white"
-            placeholder="Search products..."
+            placeholder={t("Products.searchPlaceholder")}
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
           />
@@ -58,20 +79,22 @@ const Products = () => {
 
       {/* HEADER BAR */}
       <div className="flex justify-between items-center mb-6">
-        <Header name="Products" />
+        <Header name={t("Products.title")} />
         <button
           className="flex items-center bg-blue-500 hover:bg-blue-700 text-gray-200 font-bold py-2 px-4 rounded"
-          onClick={() => setIsModalOpen(true)}
+          onClick={() => {
+            setSelectedProduct(null);
+            setIsModalOpen(true);
+          }}
         >
-          <PlusCircleIcon className="w-5 h-5 mr-2 !text-gray-200" /> Create
-          Product
+          <PlusCircleIcon className="w-5 h-5 mr-2 !text-gray-200" /> {t("Products.createButton")}
         </button>
       </div>
 
       {/* BODY PRODUCTS LIST */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg-grid-cols-3 gap-10 justify-between">
         {isLoading ? (
-          <div>Loading...</div>
+          <div>{t("Products.loading")}</div>
         ) : (
           products?.map((product) => (
             <div
@@ -87,13 +110,27 @@ const Products = () => {
                 </h3>
                 <p className="text-gray-800">${product.price.toFixed(2)}</p>
                 <div className="text-sm text-gray-600 mt-1">
-                  Stock: {product.stockQuantity}
+                  {t("Products.stock")}: {product.stockQuantity}
                 </div>
                 {product.rating && (
                   <div className="flex items-center mt-2">
                     <Rating rating={product.rating} />
                   </div>
                 )}
+                <div className="flex mt-4">
+                  <button
+                    onClick={() => handleEdit(product)}
+                    className="bg-yellow-500 text-white px-3 py-1 rounded mr-2 hover:bg-yellow-700"
+                  >
+                    {t("Products.editButton")}
+                  </button>
+                  <button
+                    onClick={() => handleDelete(product.productId)}
+                    className="bg-red-500 text-white px-3 py-1 rounded hover:bg-red-700"
+                  >
+                    {t("Products.deleteButton")}
+                  </button>
+                </div>
               </div>
             </div>
           ))
@@ -101,10 +138,11 @@ const Products = () => {
       </div>
 
       {/* MODAL */}
-      <CreateProductModal
+      <ProductModal
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}
-        onCreate={handleCreateProduct}
+        onSave={handleSaveProduct}
+        product={selectedProduct}
       />
     </div>
   );
