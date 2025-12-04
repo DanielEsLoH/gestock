@@ -26,7 +26,7 @@ const LoginPage = () => {
       const result = await login({ email, password }).unwrap();
       dispatch(setCredentials({ token: result.token, account: result.account }));
       router.push("/dashboard");
-    } catch (err) {
+    } catch (_err) {
       setFormError(t("Login.formError"));
     }
   };

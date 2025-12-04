@@ -1,6 +1,5 @@
 import { SalesSummary } from "@/state/api";
 import { formatCurrency } from "@/lib/currency";
-import { TrendingUp } from "lucide-react";
 import React from "react";
 import {
   Bar,

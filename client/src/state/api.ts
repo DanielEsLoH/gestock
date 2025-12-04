@@ -1,4 +1,5 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
+import { RootState } from "@/app/redux";
 
 export interface Product {
   productId: string;
@@ -156,7 +157,7 @@ export const api = createApi({
   baseQuery: fetchBaseQuery({
     baseUrl: process.env.NEXT_PUBLIC_API_URL,
     prepareHeaders: (headers, { getState }) => {
-      const token = (getState() as any).auth.token;
+      const token = (getState() as RootState).auth.token;
       if (token) {
         headers.set("authorization", `Bearer ${token}`);
       }
@@ -216,7 +217,7 @@ export const api = createApi({
       }),
       invalidatesTags: ["Products"],
     }),
-    updateUser: build.mutation<any, Partial<Account>>({
+    updateUser: build.mutation<Account, Partial<Account>>({
       query: (data) => ({
         url: `/user`,
         method: "PUT",

@@ -1,5 +1,4 @@
 # Mac system files
 .DS_Store
-
-# Claude Code cache
-.claude/
+/.claude
+GEMINI.md

@@ -5,7 +5,6 @@ import "./globals.css";
 import i18n from "../i18n";
 import { I18nextProvider } from "react-i18next";
 
-import { Providers } from "@/state/provider";
 import DashboardWrapper from "./dashboardWrapper";
 import { Toaster } from "react-hot-toast";
 
@@ -21,7 +20,7 @@ export default function RootLayout({
       <body className="antialiased">
         <I18nextProvider i18n={i18n}>
           <DashboardWrapper>
-            <Toaster />
+            <Toaster key="toaster" />
             {children}
           </DashboardWrapper>
         </I18nextProvider>

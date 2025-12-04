@@ -3,13 +3,6 @@ import { v4 } from "uuid";
 import Header from "@/app/_components/Header";
 import { Product } from "@/state/api";
 
-type ProductFormData = {
-  name: string;
-  price: number;
-  stockQuantity: number;
-  rating: number;
-};
-
 type ProductModalProps = {
   isOpen: boolean;
   onClose: () => void;

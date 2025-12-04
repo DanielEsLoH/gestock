@@ -7,7 +7,7 @@ const usePersistentState = <T>(key: string, defaultValue: T) => {
       if (storedValue !== null) {
         try {
           return JSON.parse(storedValue) as T;
-        } catch (error) {
+        } catch (_error) {
           return storedValue as T; // Fallback for non-JSON strings
         }
       }

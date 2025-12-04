@@ -27,7 +27,7 @@ const getInitialState = (): AuthState => {
           account,
           isAuthenticated: true
         };
-      } catch (e) {
+      } catch (_e) {
         // If parsing fails, clear localStorage
         localStorage.removeItem('token');
         localStorage.removeItem('account');

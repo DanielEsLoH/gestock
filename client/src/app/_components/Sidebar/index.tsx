@@ -5,7 +5,6 @@ import {
   Archive,
   CircleDollarSign,
   Clipboard,
-  Icon,
   Layout,
   LucideIcon,
   Menu,
