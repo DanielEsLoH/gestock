@@ -1,13 +1,19 @@
-/* eslint-disable react-hooks/rules-of-hooks */
 "use client";
 
-import React, { useState, useMemo } from "react";
+import React, { useState } from "react";
+import {
+  FetchBaseQueryError,
+} from "@reduxjs/toolkit/query";
 import Header from "@/app/_components/Header";
 import { useAppDispatch, useAppSelector } from "../redux";
 import { setIsDarkMode } from "@/state";
 import { useTranslation } from "react-i18next";
 import { useUpdateUserMutation, useChangePasswordMutation } from "@/state/api";
 import toast from "react-hot-toast";
+
+function isFetchBaseQueryError(error: unknown): error is FetchBaseQueryError {
+  return typeof error === 'object' && error != null && 'status' in error && 'data' in error;
+}
 
 const Settings = () => {
   const { t, i18n } = useTranslation();
@@ -18,8 +24,6 @@ const Settings = () => {
   const [updateUser, { isLoading: isUpdatingUser }] = useUpdateUserMutation();
   const [changePassword, { isLoading: isChangingPassword }] = useChangePasswordMutation();
 
-  const [name, setName] = useState(account?.name || "");
-  const [email, setEmail] = useState(account?.email || "");
   const [currentPassword, setCurrentPassword] = useState("");
   const [newPassword, setNewPassword] = useState("");
   const [confirmNewPassword, setConfirmNewPassword] = useState("");
@@ -28,12 +32,6 @@ const Settings = () => {
 
   const handleSaveChanges = async () => {
     try {
-      // Update profile (name, email)
-      if (name !== account?.name || email !== account?.email) {
-        await updateUser({ name, email }).unwrap();
-        toast.success(t("Settings.profileUpdateSuccess"));
-      }
-
       // Change password
       if (currentPassword || newPassword || confirmNewPassword) {
         if (newPassword !== confirmNewPassword) {
@@ -50,8 +48,13 @@ const Settings = () => {
         setNewPassword("");
         setConfirmNewPassword("");
       }
-    } catch (error: any) {
-      toast.error(error?.data?.message || t("Settings.updateError"));
+    } catch (error) {
+      if (isFetchBaseQueryError(error)) {
+        const apiError = error.data as { message: string };
+        toast.error(apiError.message || t("Settings.updateError"));
+      } else {
+        toast.error(t("Settings.updateError"));
+      }
     }
   };
 
@@ -80,7 +83,7 @@ const Settings = () => {
               </label>
               <input
                 type="text"
-                value={name}
+                value={account?.name || ""}
                 readOnly
                 className="mt-1 block w-full px-3 py-2 bg-gray-100 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm sm:text-sm text-gray-900 dark:text-gray-200"
               />
@@ -91,7 +94,7 @@ const Settings = () => {
               </label>
               <input
                 type="email"
-                value={email}
+                value={account?.email || ""}
                 readOnly
                 className="mt-1 block w-full px-3 py-2 bg-gray-100 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm sm:text-sm text-gray-900 dark:text-gray-200"
               />

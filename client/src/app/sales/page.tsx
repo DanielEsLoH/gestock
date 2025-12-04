@@ -1,12 +1,15 @@
 "use client";
 
 import { useState } from "react";
+import { FetchBaseQueryError } from "@reduxjs/toolkit/query";
 import {
   useGetProductsQuery,
   useGetCustomersQuery,
   useCreateSaleOrderMutation,
   useGetSaleOrdersQuery,
   type Product,
+  type SaleOrder,
+  type SaleItem,
 } from "@/state/api";
 import { DataGrid, GridColDef } from "@mui/x-data-grid";
 import Header from "@/app/_components/Header";
@@ -14,6 +17,10 @@ import { ShoppingCart, Plus, Minus, Trash2, Receipt } from "lucide-react";
 import toast from "react-hot-toast";
 import usePersistentState from "@/hooks/usePersistentState";
 import { formatCurrency } from "@/lib/currency";
+
+function isFetchBaseQueryError(error: unknown): error is FetchBaseQueryError {
+  return typeof error === 'object' && error != null && 'status' in error && 'data' in error;
+}
 
 interface CartItem {
   product: Product;
@@ -35,7 +42,7 @@ const Sales = () => {
   const [paymentMethod, setPaymentMethod] = useState<string>("cash");
   const [notes, setNotes] = useState<string>("");
   const [showInvoice, setShowInvoice] = useState(false);
-  const [lastInvoice, setLastInvoice] = useState<any>(null);
+  const [lastInvoice, setLastInvoice] = useState<SaleOrder | null>(null);
 
   // Add product to cart
   const addToCart = (product: Product) => {
@@ -134,8 +141,13 @@ const Sales = () => {
       setLastInvoice(result);
       setShowInvoice(true);
       clearCart();
-    } catch (error: any) {
-      toast.error(error?.data?.message || "Failed to complete sale");
+    } catch (error) {
+      if (isFetchBaseQueryError(error)) {
+        const apiError = error.data as { message: string };
+        toast.error(apiError.message || "Failed to complete sale");
+      } else {
+        toast.error("Failed to complete sale");
+      }
     }
   };
 
@@ -214,7 +226,7 @@ const Sales = () => {
                 </tr>
               </thead>
               <tbody>
-                {lastInvoice.items.map((item: any) => (
+                {lastInvoice.items.map((item: SaleItem) => (
                   <tr key={item.saleItemId} className="border-b border-gray-200 dark:border-gray-700">
                     <td className="py-2">{item.product.name}</td>
                     <td className="text-right">{item.quantity}</td>

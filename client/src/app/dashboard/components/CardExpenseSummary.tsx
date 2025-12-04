@@ -29,7 +29,8 @@ const CardExpenseSummary = ({ expenseSummary, expenseByCategory, timeframe }: Ca
           <ResponsiveContainer width="100%" height={140}>
             <PieChart>
               <Pie
-                data={expenseByCategory}
+                // eslint-disable-next-line @typescript-eslint/no-explicit-any
+                data={expenseByCategory as any}
                 innerRadius={50}
                 outerRadius={60}
                 fill="#8884d8"
