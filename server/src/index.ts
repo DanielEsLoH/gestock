@@ -15,6 +15,9 @@ import expenseRoutes from './routes/expenseRoutes';
 import saleRoutes from './routes/saleRoutes';
 import purchaseRoutes from './routes/purchaseRoutes';
 
+/* PRISMA IMPORT */
+import { prisma } from './lib/prisma';
+
 /* MIDDLEWARE IMPORTS */
 import { authMiddleware } from './middleware/authMiddleware';
 import { errorHandler } from './middleware/errorHandler';
@@ -48,6 +51,17 @@ app.use(errorHandler);
 
 /* SERVER */
 const port = process.env.PORT || 3001;
-app.listen(port, () => {
-  console.log(`Server is running on port ${port}`);
-});
+
+const startServer = async () => {
+  try {
+    await prisma.$connect();
+    console.log("Database connected successfully 🚀");
+    app.listen(port, () => {
+      console.log(`Server is running on port ${port}`);
+    });
+  } catch (error) {
+    console.error("Error connecting to database:", error);
+  }
+};
+
+startServer();
