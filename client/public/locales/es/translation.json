@@ -117,5 +117,16 @@
     "stockQuantity": "Cantidad en Stock",
     "loading": "Cargando...",
     "error": "Error al cargar los productos"
+  },
+  "Products": {
+    "title": "Productos",
+    "createButton": "Crear Producto",
+    "searchPlaceholder": "Buscar productos...",
+    "loading": "Cargando productos...",
+    "error": "Error al obtener productos",
+    "stock": "Stock",
+    "editButton": "Editar",
+    "deleteButton": "Eliminar",
+    "deleteConfirmation": "¿Estás seguro de que deseas eliminar este producto?"
   }
 }

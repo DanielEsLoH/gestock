@@ -5,8 +5,8 @@
     "productId": "d35623ee-bef6-42b2-8776-2f99f8bb4782",
     "timestamp": "2023-11-02T04:03:00Z",
     "quantity": 229,
-    "unitPrice": 221.1,
-    "totalAmount": 8012.55
+    "unitPrice": 884400,
+    "totalAmount": 32050200
   },
   {
     "accountId": "test-account-123",
@@ -14,8 +14,8 @@
     "productId": "8ac1ac77-7358-425e-be16-0bdde9f02e59",
     "timestamp": "2023-08-17T19:53:36Z",
     "quantity": 241,
-    "unitPrice": 414.68,
-    "totalAmount": 5661.25
+    "unitPrice": 1658720,
+    "totalAmount": 22645000
   },
   {
     "accountId": "test-account-123",
@@ -23,8 +23,8 @@
     "productId": "1afc136b-4d9f-4e8e-aace-8e1df908a404",
     "timestamp": "2023-11-21T15:03:18Z",
     "quantity": 699,
-    "unitPrice": 550.22,
-    "totalAmount": 4708.54
+    "unitPrice": 2200880,
+    "totalAmount": 18834160
   },
   {
     "accountId": "test-account-123",
@@ -32,8 +32,8 @@
     "productId": "af84cc12-4fea-4f58-aece-f2ce92ca9580",
     "timestamp": "2023-05-17T20:20:03Z",
     "quantity": 182,
-    "unitPrice": 113.69,
-    "totalAmount": 9419.4
+    "unitPrice": 454760,
+    "totalAmount": 37677600
   },
   {
     "accountId": "test-account-123",
@@ -41,8 +41,8 @@
     "productId": "86e3bb1c-2f5d-4774-98f3-4df7cddd0a0f",
     "timestamp": "2023-06-14T15:17:34Z",
     "quantity": 863,
-    "unitPrice": 214.01,
-    "totalAmount": 8942.2
+    "unitPrice": 856040,
+    "totalAmount": 35768800
   },
   {
     "accountId": "test-account-123",
@@ -50,8 +50,8 @@
     "productId": "26b017c6-06d8-443f-9b4a-d6b1cee6f4c0",
     "timestamp": "2023-10-27T18:59:51Z",
     "quantity": 985,
-    "unitPrice": 506.74,
-    "totalAmount": 1790.08
+    "unitPrice": 2026960,
+    "totalAmount": 7160320
   },
   {
     "accountId": "test-account-123",
@@ -59,8 +59,8 @@
     "productId": "440c9e80-6bf8-4eb3-b2d2-f81936d67de3",
     "timestamp": "2023-06-17T19:16:31Z",
     "quantity": 607,
-    "unitPrice": 100.77,
-    "totalAmount": 3293.73
+    "unitPrice": 403080,
+    "totalAmount": 13174920
   },
   {
     "accountId": "test-account-123",
@@ -68,8 +68,8 @@
     "productId": "98255f4e-40a6-470f-89a5-0792729f8947",
     "timestamp": "2024-01-12T16:37:28Z",
     "quantity": 93,
-    "unitPrice": 310.09,
-    "totalAmount": 5531.81
+    "unitPrice": 1240360,
+    "totalAmount": 22127240
   },
   {
     "accountId": "test-account-123",
@@ -77,8 +77,8 @@
     "productId": "2a339fb2-f9f3-43bc-a85a-b217a0a38f12",
     "timestamp": "2023-11-08T18:16:52Z",
     "quantity": 482,
-    "unitPrice": 83.62,
-    "totalAmount": 894.41
+    "unitPrice": 334480,
+    "totalAmount": 3577640
   },
   {
     "accountId": "test-account-123",
@@ -86,8 +86,8 @@
     "productId": "8a8391b2-b4ac-4847-b652-66ffd8d65875",
     "timestamp": "2023-12-21T22:49:11Z",
     "quantity": 285,
-    "unitPrice": 76.09,
-    "totalAmount": 3738.87
+    "unitPrice": 304360,
+    "totalAmount": 14955480
   },
   {
     "accountId": "test-account-123",
@@ -95,8 +95,8 @@
     "productId": "be2157fb-7454-405e-9511-bf7ba81b7726",
     "timestamp": "2023-11-21T15:03:43Z",
     "quantity": 219,
-    "unitPrice": 606.43,
-    "totalAmount": 8773.57
+    "unitPrice": 2425720,
+    "totalAmount": 35094280
   },
   {
     "accountId": "test-account-123",
@@ -104,8 +104,8 @@
     "productId": "fdf1ba3d-fa06-4ce5-90ff-d081c5d37176",
     "timestamp": "2024-03-01T17:35:27Z",
     "quantity": 286,
-    "unitPrice": 246.58,
-    "totalAmount": 3328.18
+    "unitPrice": 986320,
+    "totalAmount": 13312720
   },
   {
     "accountId": "test-account-123",
@@ -113,8 +113,8 @@
     "productId": "afded6df-058f-477d-9878-e0e0b1d3dff3",
     "timestamp": "2023-06-27T12:09:45Z",
     "quantity": 107,
-    "unitPrice": 891.26,
-    "totalAmount": 3915.37
+    "unitPrice": 3565040,
+    "totalAmount": 15661480
   },
   {
     "accountId": "test-account-123",
@@ -122,8 +122,8 @@
     "productId": "daa29167-82a7-474b-9687-b8b903e7ec69",
     "timestamp": "2023-07-06T02:50:19Z",
     "quantity": 195,
-    "unitPrice": 809.59,
-    "totalAmount": 725.11
+    "unitPrice": 3238360,
+    "totalAmount": 2900440
   },
   {
     "accountId": "test-account-123",
@@ -131,8 +131,8 @@
     "productId": "ccb83982-71f3-4497-bad8-7e64c6920dc6",
     "timestamp": "2023-03-18T01:14:42Z",
     "quantity": 339,
-    "unitPrice": 662.74,
-    "totalAmount": 3694.96
+    "unitPrice": 2650960,
+    "totalAmount": 14779840
   },
   {
     "accountId": "test-account-123",
@@ -140,8 +140,8 @@
     "productId": "1936d406-e89e-40e4-bff7-1827532269d4",
     "timestamp": "2023-11-05T00:17:48Z",
     "quantity": 71,
-    "unitPrice": 529.95,
-    "totalAmount": 2535.36
+    "unitPrice": 2119800,
+    "totalAmount": 10141440
   },
   {
     "accountId": "test-account-123",
@@ -149,8 +149,8 @@
     "productId": "c849a535-5f8b-47e3-889c-015693a644ac",
     "timestamp": "2023-11-03T18:34:59Z",
     "quantity": 235,
-    "unitPrice": 769.19,
-    "totalAmount": 7007.95
+    "unitPrice": 3076760,
+    "totalAmount": 28031800
   },
   {
     "accountId": "test-account-123",
@@ -158,8 +158,8 @@
     "productId": "0c3e80ee-59b3-4fc4-b760-8b07acc2d3ae",
     "timestamp": "2024-01-04T00:19:37Z",
     "quantity": 489,
-    "unitPrice": 965.72,
-    "totalAmount": 8759.91
+    "unitPrice": 3862880,
+    "totalAmount": 35039640
   },
   {
     "accountId": "test-account-123",
@@ -167,8 +167,8 @@
     "productId": "d8f5bee3-f3eb-4071-a124-6b857e0fd798",
     "timestamp": "2023-07-29T03:12:53Z",
     "quantity": 967,
-    "unitPrice": 486.31,
-    "totalAmount": 3167.8
+    "unitPrice": 1945240,
+    "totalAmount": 12671200
   },
   {
     "accountId": "test-account-123",
@@ -176,8 +176,8 @@
     "productId": "8d15de86-0e4a-4414-9166-7a33610202d3",
     "timestamp": "2023-06-16T03:56:50Z",
     "quantity": 371,
-    "unitPrice": 413.88,
-    "totalAmount": 668.91
+    "unitPrice": 1655520,
+    "totalAmount": 2675640
   },
   {
     "accountId": "test-account-123",
@@ -185,8 +185,8 @@
     "productId": "ea8fd0b9-c2d9-4d43-9c23-44cb99d079bb",
     "timestamp": "2023-12-03T20:33:41Z",
     "quantity": 435,
-    "unitPrice": 477.74,
-    "totalAmount": 9592.66
+    "unitPrice": 1910960,
+    "totalAmount": 38370640
   },
   {
     "accountId": "test-account-123",
@@ -194,8 +194,8 @@
     "productId": "25d01c80-bca1-4a00-b1d0-0fbd39ff9e89",
     "timestamp": "2023-12-27T16:34:21Z",
     "quantity": 699,
-    "unitPrice": 336.99,
-    "totalAmount": 8316.35
+    "unitPrice": 1347960,
+    "totalAmount": 33265400
   },
   {
     "accountId": "test-account-123",
@@ -203,8 +203,8 @@
     "productId": "1d6df6e3-b7ea-4507-9d66-87c6ee8ed5b9",
     "timestamp": "2024-03-14T02:16:17Z",
     "quantity": 540,
-    "unitPrice": 656.63,
-    "totalAmount": 9777.17
+    "unitPrice": 2626520,
+    "totalAmount": 39108680
   },
   {
     "accountId": "test-account-123",
@@ -212,8 +212,8 @@
     "productId": "000a8c23-5bca-436c-a216-4e747a94c511",
     "timestamp": "2024-02-13T07:28:00Z",
     "quantity": 884,
-    "unitPrice": 899.96,
-    "totalAmount": 579.95
+    "unitPrice": 3599840,
+    "totalAmount": 2319800
   },
   {
     "accountId": "test-account-123",
@@ -221,8 +221,8 @@
     "productId": "c5b600dc-6bfb-492a-b335-c3cc8c707959",
     "timestamp": "2023-09-04T23:51:27Z",
     "quantity": 106,
-    "unitPrice": 272.72,
-    "totalAmount": 8699.14
+    "unitPrice": 1090880,
+    "totalAmount": 34796560
   },
   {
     "accountId": "test-account-123",
@@ -230,8 +230,8 @@
     "productId": "9d5fafbc-312b-47e8-ada1-283918f0c3b5",
     "timestamp": "2023-06-27T17:57:01Z",
     "quantity": 543,
-    "unitPrice": 15.84,
-    "totalAmount": 304.87
+    "unitPrice": 63360,
+    "totalAmount": 1219480
   },
   {
     "accountId": "test-account-123",
@@ -239,8 +239,8 @@
     "productId": "0114d5d4-ae48-46fa-b0ca-afe60eb88add",
     "timestamp": "2023-03-27T00:06:48Z",
     "quantity": 262,
-    "unitPrice": 838.85,
-    "totalAmount": 5265.29
+    "unitPrice": 3355400,
+    "totalAmount": 21061160
   },
   {
     "accountId": "test-account-123",
@@ -248,8 +248,8 @@
     "productId": "e5b0da8c-148d-4680-b262-8609fb8a10da",
     "timestamp": "2023-09-25T03:45:29Z",
     "quantity": 485,
-    "unitPrice": 268.43,
-    "totalAmount": 5710.52
+    "unitPrice": 1073720,
+    "totalAmount": 22842080
   },
   {
     "accountId": "test-account-123",
@@ -257,8 +257,8 @@
     "productId": "2be5b024-2c96-4f29-912c-c6f36353f799",
     "timestamp": "2023-04-01T01:39:53Z",
     "quantity": 561,
-    "unitPrice": 783.41,
-    "totalAmount": 8189.57
+    "unitPrice": 3133640,
+    "totalAmount": 32758280
   },
   {
     "accountId": "test-account-123",
@@ -266,8 +266,8 @@
     "productId": "fcf2e432-62a3-4b6f-a34d-36e42a12272e",
     "timestamp": "2023-07-10T13:42:52Z",
     "quantity": 333,
-    "unitPrice": 491.06,
-    "totalAmount": 6152.84
+    "unitPrice": 1964240,
+    "totalAmount": 24611360
   },
   {
     "accountId": "test-account-123",
@@ -275,8 +275,8 @@
     "productId": "fc4c81e5-f1ac-40f5-8c6f-da3fbad5599d",
     "timestamp": "2023-09-06T15:15:47Z",
     "quantity": 949,
-    "unitPrice": 120.98,
-    "totalAmount": 8873.08
+    "unitPrice": 483920,
+    "totalAmount": 35492320
   },
   {
     "accountId": "test-account-123",
@@ -284,8 +284,8 @@
     "productId": "07238d8e-0037-4972-87ca-0df206ee3e42",
     "timestamp": "2024-03-05T13:54:29Z",
     "quantity": 2,
-    "unitPrice": 234.17,
-    "totalAmount": 7048.43
+    "unitPrice": 936680,
+    "totalAmount": 28193720
   },
   {
     "accountId": "test-account-123",
@@ -293,8 +293,8 @@
     "productId": "154b7860-23a2-4564-ad99-1745ab7122ef",
     "timestamp": "2023-03-22T06:46:16Z",
     "quantity": 292,
-    "unitPrice": 707.73,
-    "totalAmount": 2045.56
+    "unitPrice": 2830920,
+    "totalAmount": 8182240
   },
   {
     "accountId": "test-account-123",
@@ -302,8 +302,8 @@
     "productId": "8d4bf814-65d4-4df4-84cc-68911d925fdf",
     "timestamp": "2023-06-12T18:25:57Z",
     "quantity": 675,
-    "unitPrice": 243.48,
-    "totalAmount": 9259.03
+    "unitPrice": 973920,
+    "totalAmount": 37036120
   },
   {
     "accountId": "test-account-123",
@@ -311,8 +311,8 @@
     "productId": "a52bf1bd-3d35-4cd2-849a-354e3952e2d2",
     "timestamp": "2023-11-21T03:27:09Z",
     "quantity": 7,
-    "unitPrice": 44.74,
-    "totalAmount": 9210.79
+    "unitPrice": 178960,
+    "totalAmount": 36843160
   },
   {
     "accountId": "test-account-123",
@@ -320,8 +320,8 @@
     "productId": "d35623ee-bef6-42b2-8776-2f99f8bb4782",
     "timestamp": "2024-01-17T01:48:30Z",
     "quantity": 659,
-    "unitPrice": 497.62,
-    "totalAmount": 6661.77
+    "unitPrice": 1990480,
+    "totalAmount": 26647080
   },
   {
     "accountId": "test-account-123",
@@ -329,8 +329,8 @@
     "productId": "8ac1ac77-7358-425e-be16-0bdde9f02e59",
     "timestamp": "2024-02-28T00:43:12Z",
     "quantity": 818,
-    "unitPrice": 685.08,
-    "totalAmount": 8503.33
+    "unitPrice": 2740320,
+    "totalAmount": 34013320
   },
   {
     "accountId": "test-account-123",
@@ -338,8 +338,8 @@
     "productId": "1afc136b-4d9f-4e8e-aace-8e1df908a404",
     "timestamp": "2023-09-05T17:54:43Z",
     "quantity": 578,
-    "unitPrice": 817.99,
-    "totalAmount": 1584.0
+    "unitPrice": 3271960,
+    "totalAmount": 6336000
   },
   {
     "accountId": "test-account-123",
@@ -347,8 +347,8 @@
     "productId": "af84cc12-4fea-4f58-aece-f2ce92ca9580",
     "timestamp": "2023-08-19T00:33:46Z",
     "quantity": 491,
-    "unitPrice": 801.15,
-    "totalAmount": 3758.2
+    "unitPrice": 3204600,
+    "totalAmount": 15032800
   },
   {
     "accountId": "test-account-123",
@@ -356,8 +356,8 @@
     "productId": "86e3bb1c-2f5d-4774-98f3-4df7cddd0a0f",
     "timestamp": "2023-12-27T23:17:04Z",
     "quantity": 281,
-    "unitPrice": 317.09,
-    "totalAmount": 6151.55
+    "unitPrice": 1268360,
+    "totalAmount": 24606200
   },
   {
     "accountId": "test-account-123",
@@ -365,8 +365,8 @@
     "productId": "26b017c6-06d8-443f-9b4a-d6b1cee6f4c0",
     "timestamp": "2023-11-18T12:30:37Z",
     "quantity": 666,
-    "unitPrice": 690.3,
-    "totalAmount": 1522.01
+    "unitPrice": 2761200,
+    "totalAmount": 6088040
   },
   {
     "accountId": "test-account-123",
@@ -374,8 +374,8 @@
     "productId": "440c9e80-6bf8-4eb3-b2d2-f81936d67de3",
     "timestamp": "2024-01-22T17:28:27Z",
     "quantity": 113,
-    "unitPrice": 54.35,
-    "totalAmount": 8803.88
+    "unitPrice": 217400,
+    "totalAmount": 35215520
   },
   {
     "accountId": "test-account-123",
@@ -383,8 +383,8 @@
     "productId": "98255f4e-40a6-470f-89a5-0792729f8947",
     "timestamp": "2023-03-29T14:37:25Z",
     "quantity": 574,
-    "unitPrice": 605.86,
-    "totalAmount": 749.81
+    "unitPrice": 2423440,
+    "totalAmount": 2999240
   },
   {
     "accountId": "test-account-123",
@@ -392,8 +392,8 @@
     "productId": "2a339fb2-f9f3-43bc-a85a-b217a0a38f12",
     "timestamp": "2023-10-04T08:22:42Z",
     "quantity": 26,
-    "unitPrice": 438.25,
-    "totalAmount": 9407.62
+    "unitPrice": 1753000,
+    "totalAmount": 37630480
   },
   {
     "accountId": "test-account-123",
@@ -401,8 +401,8 @@
     "productId": "8a8391b2-b4ac-4847-b652-66ffd8d65875",
     "timestamp": "2024-02-12T03:24:52Z",
     "quantity": 452,
-    "unitPrice": 511.0,
-    "totalAmount": 8734.61
+    "unitPrice": 2044000,
+    "totalAmount": 34938440
   },
   {
     "accountId": "test-account-123",
@@ -410,8 +410,8 @@
     "productId": "be2157fb-7454-405e-9511-bf7ba81b7726",
     "timestamp": "2023-12-25T10:27:27Z",
     "quantity": 484,
-    "unitPrice": 280.73,
-    "totalAmount": 5679.77
+    "unitPrice": 1122920,
+    "totalAmount": 22719080
   },
   {
     "accountId": "test-account-123",
@@ -419,8 +419,8 @@
     "productId": "fdf1ba3d-fa06-4ce5-90ff-d081c5d37176",
     "timestamp": "2023-08-16T06:01:27Z",
     "quantity": 260,
-    "unitPrice": 232.89,
-    "totalAmount": 3765.82
+    "unitPrice": 931560,
+    "totalAmount": 15063280
   },
   {
     "accountId": "test-account-123",
@@ -428,8 +428,8 @@
     "productId": "afded6df-058f-477d-9878-e0e0b1d3dff3",
     "timestamp": "2023-10-02T16:42:02Z",
     "quantity": 718,
-    "unitPrice": 685.31,
-    "totalAmount": 6321.19
+    "unitPrice": 2741240,
+    "totalAmount": 25284760
   },
   {
     "accountId": "test-account-123",
@@ -437,8 +437,8 @@
     "productId": "daa29167-82a7-474b-9687-b8b903e7ec69",
     "timestamp": "2023-06-10T02:42:28Z",
     "quantity": 297,
-    "unitPrice": 953.45,
-    "totalAmount": 2757.43
+    "unitPrice": 3813800,
+    "totalAmount": 11029720
   },
   {
     "accountId": "test-account-123",
@@ -446,8 +446,8 @@
     "productId": "ccb83982-71f3-4497-bad8-7e64c6920dc6",
     "timestamp": "2023-07-16T21:58:15Z",
     "quantity": 447,
-    "unitPrice": 777.27,
-    "totalAmount": 4574.02
+    "unitPrice": 3109080,
+    "totalAmount": 18296080
   },
   {
     "accountId": "test-account-123",
@@ -455,8 +455,8 @@
     "productId": "1936d406-e89e-40e4-bff7-1827532269d4",
     "timestamp": "2023-06-17T10:37:35Z",
     "quantity": 390,
-    "unitPrice": 855.29,
-    "totalAmount": 4044.96
+    "unitPrice": 3421160,
+    "totalAmount": 16179840
   },
   {
     "accountId": "test-account-123",
@@ -464,8 +464,8 @@
     "productId": "c849a535-5f8b-47e3-889c-015693a644ac",
     "timestamp": "2024-01-31T06:04:28Z",
     "quantity": 851,
-    "unitPrice": 170.23,
-    "totalAmount": 9399.42
+    "unitPrice": 680920,
+    "totalAmount": 37597680
   },
   {
     "accountId": "test-account-123",
@@ -473,8 +473,8 @@
     "productId": "0c3e80ee-59b3-4fc4-b760-8b07acc2d3ae",
     "timestamp": "2023-05-03T13:57:12Z",
     "quantity": 882,
-    "unitPrice": 973.95,
-    "totalAmount": 4241.28
+    "unitPrice": 3895800,
+    "totalAmount": 16965120
   },
   {
     "accountId": "test-account-123",
@@ -482,8 +482,8 @@
     "productId": "d8f5bee3-f3eb-4071-a124-6b857e0fd798",
     "timestamp": "2023-10-22T01:09:46Z",
     "quantity": 830,
-    "unitPrice": 200.27,
-    "totalAmount": 3059.84
+    "unitPrice": 801080,
+    "totalAmount": 12239360
   },
   {
     "accountId": "test-account-123",
@@ -491,8 +491,8 @@
     "productId": "8d15de86-0e4a-4414-9166-7a33610202d3",
     "timestamp": "2023-05-09T15:02:48Z",
     "quantity": 414,
-    "unitPrice": 924.09,
-    "totalAmount": 8604.22
+    "unitPrice": 3696360,
+    "totalAmount": 34416880
   },
   {
     "accountId": "test-account-123",
@@ -500,8 +500,8 @@
     "productId": "ea8fd0b9-c2d9-4d43-9c23-44cb99d079bb",
     "timestamp": "2023-03-23T16:14:23Z",
     "quantity": 390,
-    "unitPrice": 792.89,
-    "totalAmount": 6503.0
+    "unitPrice": 3171560,
+    "totalAmount": 26012000
   },
   {
     "accountId": "test-account-123",
@@ -509,8 +509,8 @@
     "productId": "25d01c80-bca1-4a00-b1d0-0fbd39ff9e89",
     "timestamp": "2024-02-22T07:16:30Z",
     "quantity": 391,
-    "unitPrice": 685.29,
-    "totalAmount": 9900.96
+    "unitPrice": 2741160,
+    "totalAmount": 39603840
   },
   {
     "accountId": "test-account-123",
@@ -518,8 +518,8 @@
     "productId": "1d6df6e3-b7ea-4507-9d66-87c6ee8ed5b9",
     "timestamp": "2023-05-04T23:00:53Z",
     "quantity": 309,
-    "unitPrice": 639.66,
-    "totalAmount": 9964.61
+    "unitPrice": 2558640,
+    "totalAmount": 39858440
   },
   {
     "accountId": "test-account-123",
@@ -527,8 +527,8 @@
     "productId": "000a8c23-5bca-436c-a216-4e747a94c511",
     "timestamp": "2023-08-23T17:23:35Z",
     "quantity": 325,
-    "unitPrice": 471.59,
-    "totalAmount": 7706.41
+    "unitPrice": 1886360,
+    "totalAmount": 30825640
   },
   {
     "accountId": "test-account-123",
@@ -536,8 +536,8 @@
     "productId": "c5b600dc-6bfb-492a-b335-c3cc8c707959",
     "timestamp": "2024-02-22T06:16:55Z",
     "quantity": 857,
-    "unitPrice": 197.36,
-    "totalAmount": 760.65
+    "unitPrice": 789440,
+    "totalAmount": 3042600
   },
   {
     "accountId": "test-account-123",
@@ -545,8 +545,8 @@
     "productId": "9d5fafbc-312b-47e8-ada1-283918f0c3b5",
     "timestamp": "2023-12-15T21:21:09Z",
     "quantity": 25,
-    "unitPrice": 158.12,
-    "totalAmount": 243.15
+    "unitPrice": 632480,
+    "totalAmount": 972600
   },
   {
     "accountId": "test-account-123",
@@ -554,8 +554,8 @@
     "productId": "0114d5d4-ae48-46fa-b0ca-afe60eb88add",
     "timestamp": "2024-02-06T13:55:02Z",
     "quantity": 757,
-    "unitPrice": 283.2,
-    "totalAmount": 7420.27
+    "unitPrice": 1132800,
+    "totalAmount": 29681080
   },
   {
     "accountId": "test-account-123",
@@ -563,8 +563,8 @@
     "productId": "e5b0da8c-148d-4680-b262-8609fb8a10da",
     "timestamp": "2023-05-20T14:26:19Z",
     "quantity": 580,
-    "unitPrice": 659.75,
-    "totalAmount": 5018.42
+    "unitPrice": 2639000,
+    "totalAmount": 20073680
   },
   {
     "accountId": "test-account-123",
@@ -572,8 +572,8 @@
     "productId": "2be5b024-2c96-4f29-912c-c6f36353f799",
     "timestamp": "2023-07-01T04:46:47Z",
     "quantity": 948,
-    "unitPrice": 620.57,
-    "totalAmount": 7555.21
+    "unitPrice": 2482280,
+    "totalAmount": 30220840
   },
   {
     "accountId": "test-account-123",
@@ -581,8 +581,8 @@
     "productId": "fcf2e432-62a3-4b6f-a34d-36e42a12272e",
     "timestamp": "2023-03-25T13:26:56Z",
     "quantity": 960,
-    "unitPrice": 989.43,
-    "totalAmount": 1188.7
+    "unitPrice": 3957720,
+    "totalAmount": 4754800
   },
   {
     "accountId": "test-account-123",
@@ -590,8 +590,8 @@
     "productId": "fc4c81e5-f1ac-40f5-8c6f-da3fbad5599d",
     "timestamp": "2023-05-29T02:29:01Z",
     "quantity": 667,
-    "unitPrice": 357.37,
-    "totalAmount": 6196.09
+    "unitPrice": 1429480,
+    "totalAmount": 24784360
   },
   {
     "accountId": "test-account-123",
@@ -599,8 +599,8 @@
     "productId": "07238d8e-0037-4972-87ca-0df206ee3e42",
     "timestamp": "2023-03-15T22:27:44Z",
     "quantity": 623,
-    "unitPrice": 467.77,
-    "totalAmount": 6657.9
+    "unitPrice": 1871080,
+    "totalAmount": 26631600
   },
   {
     "accountId": "test-account-123",
@@ -608,8 +608,8 @@
     "productId": "154b7860-23a2-4564-ad99-1745ab7122ef",
     "timestamp": "2023-03-17T09:21:59Z",
     "quantity": 23,
-    "unitPrice": 945.27,
-    "totalAmount": 7870.76
+    "unitPrice": 3781080,
+    "totalAmount": 31483040
   },
   {
     "accountId": "test-account-123",
@@ -617,8 +617,8 @@
     "productId": "8d4bf814-65d4-4df4-84cc-68911d925fdf",
     "timestamp": "2024-01-29T09:24:28Z",
     "quantity": 140,
-    "unitPrice": 664.0,
-    "totalAmount": 7582.02
+    "unitPrice": 2656000,
+    "totalAmount": 30328080
   },
   {
     "accountId": "test-account-123",
@@ -626,8 +626,8 @@
     "productId": "a52bf1bd-3d35-4cd2-849a-354e3952e2d2",
     "timestamp": "2023-05-25T21:06:21Z",
     "quantity": 127,
-    "unitPrice": 185.81,
-    "totalAmount": 4970.67
+    "unitPrice": 743240,
+    "totalAmount": 19882680
   },
   {
     "accountId": "test-account-123",
@@ -635,8 +635,8 @@
     "productId": "d35623ee-bef6-42b2-8776-2f99f8bb4782",
     "timestamp": "2023-12-12T16:58:27Z",
     "quantity": 178,
-    "unitPrice": 422.07,
-    "totalAmount": 169.06
+    "unitPrice": 1688280,
+    "totalAmount": 676240
   },
   {
     "accountId": "test-account-123",
@@ -644,8 +644,8 @@
     "productId": "8ac1ac77-7358-425e-be16-0bdde9f02e59",
     "timestamp": "2023-03-23T10:36:36Z",
     "quantity": 295,
-    "unitPrice": 536.74,
-    "totalAmount": 7652.54
+    "unitPrice": 2146960,
+    "totalAmount": 30610160
   },
   {
     "accountId": "test-account-123",
@@ -653,8 +653,8 @@
     "productId": "1afc136b-4d9f-4e8e-aace-8e1df908a404",
     "timestamp": "2023-08-28T07:08:56Z",
     "quantity": 338,
-    "unitPrice": 304.83,
-    "totalAmount": 137.98
+    "unitPrice": 1219320,
+    "totalAmount": 551920
   },
   {
     "accountId": "test-account-123",
@@ -662,8 +662,8 @@
     "productId": "af84cc12-4fea-4f58-aece-f2ce92ca9580",
     "timestamp": "2024-02-15T09:35:47Z",
     "quantity": 65,
-    "unitPrice": 951.61,
-    "totalAmount": 7558.27
+    "unitPrice": 3806440,
+    "totalAmount": 30233080
   },
   {
     "accountId": "test-account-123",
@@ -671,8 +671,8 @@
     "productId": "86e3bb1c-2f5d-4774-98f3-4df7cddd0a0f",
     "timestamp": "2023-11-25T20:30:36Z",
     "quantity": 171,
-    "unitPrice": 305.65,
-    "totalAmount": 4647.58
+    "unitPrice": 1222600,
+    "totalAmount": 18590320
   },
   {
     "accountId": "test-account-123",
@@ -680,8 +680,8 @@
     "productId": "26b017c6-06d8-443f-9b4a-d6b1cee6f4c0",
     "timestamp": "2024-02-15T23:11:52Z",
     "quantity": 610,
-    "unitPrice": 428.16,
-    "totalAmount": 3294.23
+    "unitPrice": 1712640,
+    "totalAmount": 13176920
   },
   {
     "accountId": "test-account-123",
@@ -689,8 +689,8 @@
     "productId": "440c9e80-6bf8-4eb3-b2d2-f81936d67de3",
     "timestamp": "2024-03-10T20:18:24Z",
     "quantity": 579,
-    "unitPrice": 129.19,
-    "totalAmount": 488.19
+    "unitPrice": 516760,
+    "totalAmount": 1952760
   },
   {
     "accountId": "test-account-123",
@@ -698,8 +698,8 @@
     "productId": "98255f4e-40a6-470f-89a5-0792729f8947",
     "timestamp": "2023-07-26T01:38:07Z",
     "quantity": 186,
-    "unitPrice": 544.82,
-    "totalAmount": 2989.5
+    "unitPrice": 2179280,
+    "totalAmount": 11958000
   },
   {
     "accountId": "test-account-123",
@@ -707,8 +707,8 @@
     "productId": "2a339fb2-f9f3-43bc-a85a-b217a0a38f12",
     "timestamp": "2023-09-24T10:51:03Z",
     "quantity": 540,
-    "unitPrice": 541.07,
-    "totalAmount": 3861.48
+    "unitPrice": 2164280,
+    "totalAmount": 15445920
   },
   {
     "accountId": "test-account-123",
@@ -716,8 +716,8 @@
     "productId": "8a8391b2-b4ac-4847-b652-66ffd8d65875",
     "timestamp": "2023-06-29T10:24:41Z",
     "quantity": 661,
-    "unitPrice": 78.07,
-    "totalAmount": 2467.93
+    "unitPrice": 312280,
+    "totalAmount": 9871720
   },
   {
     "accountId": "test-account-123",
@@ -725,8 +725,8 @@
     "productId": "be2157fb-7454-405e-9511-bf7ba81b7726",
     "timestamp": "2023-12-02T12:10:55Z",
     "quantity": 635,
-    "unitPrice": 52.5,
-    "totalAmount": 4393.68
+    "unitPrice": 210000,
+    "totalAmount": 17574720
   },
   {
     "accountId": "test-account-123",
@@ -734,8 +734,8 @@
     "productId": "fdf1ba3d-fa06-4ce5-90ff-d081c5d37176",
     "timestamp": "2023-10-29T22:49:12Z",
     "quantity": 733,
-    "unitPrice": 349.87,
-    "totalAmount": 2736.72
+    "unitPrice": 1399480,
+    "totalAmount": 10946880
   },
   {
     "accountId": "test-account-123",
@@ -743,8 +743,8 @@
     "productId": "afded6df-058f-477d-9878-e0e0b1d3dff3",
     "timestamp": "2023-11-07T08:57:27Z",
     "quantity": 268,
-    "unitPrice": 700.99,
-    "totalAmount": 7115.25
+    "unitPrice": 2803960,
+    "totalAmount": 28461000
   },
   {
     "accountId": "test-account-123",
@@ -752,8 +752,8 @@
     "productId": "daa29167-82a7-474b-9687-b8b903e7ec69",
     "timestamp": "2024-01-11T03:57:45Z",
     "quantity": 387,
-    "unitPrice": 382.34,
-    "totalAmount": 2575.24
+    "unitPrice": 1529360,
+    "totalAmount": 10300960
   },
   {
     "accountId": "test-account-123",
@@ -761,8 +761,8 @@
     "productId": "ccb83982-71f3-4497-bad8-7e64c6920dc6",
     "timestamp": "2023-11-23T13:32:43Z",
     "quantity": 420,
-    "unitPrice": 596.87,
-    "totalAmount": 3294.5
+    "unitPrice": 2387480,
+    "totalAmount": 13178000
   },
   {
     "accountId": "test-account-123",
@@ -770,8 +770,8 @@
     "productId": "1936d406-e89e-40e4-bff7-1827532269d4",
     "timestamp": "2023-04-16T18:59:38Z",
     "quantity": 678,
-    "unitPrice": 947.48,
-    "totalAmount": 7363.69
+    "unitPrice": 3789920,
+    "totalAmount": 29454760
   },
   {
     "accountId": "test-account-123",
@@ -779,8 +779,8 @@
     "productId": "c849a535-5f8b-47e3-889c-015693a644ac",
     "timestamp": "2024-01-27T13:21:55Z",
     "quantity": 626,
-    "unitPrice": 731.66,
-    "totalAmount": 9487.24
+    "unitPrice": 2926640,
+    "totalAmount": 37948960
   },
   {
     "accountId": "test-account-123",
@@ -788,8 +788,8 @@
     "productId": "0c3e80ee-59b3-4fc4-b760-8b07acc2d3ae",
     "timestamp": "2023-11-02T09:32:22Z",
     "quantity": 732,
-    "unitPrice": 366.09,
-    "totalAmount": 4384.09
+    "unitPrice": 1464360,
+    "totalAmount": 17536360
   },
   {
     "accountId": "test-account-123",
@@ -797,8 +797,8 @@
     "productId": "d8f5bee3-f3eb-4071-a124-6b857e0fd798",
     "timestamp": "2023-04-21T22:19:20Z",
     "quantity": 368,
-    "unitPrice": 37.27,
-    "totalAmount": 5510.41
+    "unitPrice": 149080,
+    "totalAmount": 22041640
   },
   {
     "accountId": "test-account-123",
@@ -806,8 +806,8 @@
     "productId": "8d15de86-0e4a-4414-9166-7a33610202d3",
     "timestamp": "2023-09-14T06:10:36Z",
     "quantity": 426,
-    "unitPrice": 257.98,
-    "totalAmount": 5241.93
+    "unitPrice": 1031920,
+    "totalAmount": 20967720
   },
   {
     "accountId": "test-account-123",
@@ -815,8 +815,8 @@
     "productId": "ea8fd0b9-c2d9-4d43-9c23-44cb99d079bb",
     "timestamp": "2023-05-09T05:06:12Z",
     "quantity": 228,
-    "unitPrice": 205.53,
-    "totalAmount": 2448.67
+    "unitPrice": 822120,
+    "totalAmount": 9794680
   },
   {
     "accountId": "test-account-123",
@@ -824,8 +824,8 @@
     "productId": "25d01c80-bca1-4a00-b1d0-0fbd39ff9e89",
     "timestamp": "2023-07-09T23:55:58Z",
     "quantity": 147,
-    "unitPrice": 304.11,
-    "totalAmount": 646.37
+    "unitPrice": 1216440,
+    "totalAmount": 2585480
   },
   {
     "accountId": "test-account-123",
@@ -833,8 +833,8 @@
     "productId": "1d6df6e3-b7ea-4507-9d66-87c6ee8ed5b9",
     "timestamp": "2023-06-25T14:57:39Z",
     "quantity": 700,
-    "unitPrice": 574.25,
-    "totalAmount": 6103.38
+    "unitPrice": 2297000,
+    "totalAmount": 24413520
   },
   {
     "accountId": "test-account-123",
@@ -842,8 +842,8 @@
     "productId": "000a8c23-5bca-436c-a216-4e747a94c511",
     "timestamp": "2023-04-10T13:26:52Z",
     "quantity": 400,
-    "unitPrice": 49.43,
-    "totalAmount": 1860.5
+    "unitPrice": 197720,
+    "totalAmount": 7442000
   },
   {
     "accountId": "test-account-123",
@@ -851,8 +851,8 @@
     "productId": "c5b600dc-6bfb-492a-b335-c3cc8c707959",
     "timestamp": "2023-11-17T17:02:08Z",
     "quantity": 654,
-    "unitPrice": 825.63,
-    "totalAmount": 6998.87
+    "unitPrice": 3302520,
+    "totalAmount": 27995480
   },
   {
     "accountId": "test-account-123",
@@ -860,8 +860,8 @@
     "productId": "9d5fafbc-312b-47e8-ada1-283918f0c3b5",
     "timestamp": "2023-03-20T16:53:47Z",
     "quantity": 125,
-    "unitPrice": 237.24,
-    "totalAmount": 6603.67
+    "unitPrice": 948960,
+    "totalAmount": 26414680
   },
   {
     "accountId": "test-account-123",
@@ -869,8 +869,8 @@
     "productId": "0114d5d4-ae48-46fa-b0ca-afe60eb88add",
     "timestamp": "2023-06-14T08:48:03Z",
     "quantity": 677,
-    "unitPrice": 479.94,
-    "totalAmount": 7760.82
+    "unitPrice": 1919760,
+    "totalAmount": 31043280
   },
   {
     "accountId": "test-account-123",
@@ -878,8 +878,8 @@
     "productId": "e5b0da8c-148d-4680-b262-8609fb8a10da",
     "timestamp": "2023-06-30T12:47:06Z",
     "quantity": 555,
-    "unitPrice": 410.27,
-    "totalAmount": 9330.17
+    "unitPrice": 1641080,
+    "totalAmount": 37320680
   },
   {
     "accountId": "test-account-123",
@@ -887,8 +887,8 @@
     "productId": "2be5b024-2c96-4f29-912c-c6f36353f799",
     "timestamp": "2023-11-24T12:14:40Z",
     "quantity": 508,
-    "unitPrice": 558.25,
-    "totalAmount": 4006.69
+    "unitPrice": 2233000,
+    "totalAmount": 16026760
   },
   {
     "accountId": "test-account-123",
@@ -896,7 +896,7 @@
     "productId": "fcf2e432-62a3-4b6f-a34d-36e42a12272e",
     "timestamp": "2023-09-16T14:34:18Z",
     "quantity": 259,
-    "unitPrice": 368.39,
-    "totalAmount": 5611.94
+    "unitPrice": 1473560,
+    "totalAmount": 22447760
   }
 ]

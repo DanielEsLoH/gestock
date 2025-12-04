@@ -15,6 +15,8 @@ import { Product } from "@/state/api";
 
 import { useTranslation } from "react-i18next";
 
+import { formatCurrency } from "@/lib/currency";
+
 const Products = () => {
   const { t } = useTranslation();
   const [searchTerm, setSearchTerm] = useState("");
@@ -33,7 +35,10 @@ const Products = () => {
 
   const handleSaveProduct = async (productData: Partial<Product>) => {
     if (selectedProduct) {
-      await updateProduct({ ...productData, productId: selectedProduct.productId });
+      await updateProduct({
+        ...productData,
+        productId: selectedProduct.productId,
+      });
     } else {
       await createProduct(productData as Product);
     }
@@ -56,9 +61,7 @@ const Products = () => {
 
   if (isError || !products) {
     return (
-      <div className="text-center text-red-500 py-4">
-        {t("Products.error")}
-      </div>
+      <div className="text-center text-red-500 py-4">{t("Products.error")}</div>
     );
   }
 
@@ -87,7 +90,8 @@ const Products = () => {
             setIsModalOpen(true);
           }}
         >
-          <PlusCircleIcon className="w-5 h-5 mr-2 !text-gray-200" /> {t("Products.createButton")}
+          <PlusCircleIcon className="w-5 h-5 mr-2 text-gray-200!" />{" "}
+          {t("Products.createButton")}
         </button>
       </div>
 
@@ -108,7 +112,7 @@ const Products = () => {
                 <h3 className="text-lg text-gray-900 font-semibold">
                   {product.name}
                 </h3>
-                <p className="text-gray-800">${product.price.toFixed(2)}</p>
+                <p className="text-gray-800">{formatCurrency(product.price)}</p>
                 <div className="text-sm text-gray-600 mt-1">
                   {t("Products.stock")}: {product.stockQuantity}
                 </div>

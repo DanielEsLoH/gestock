@@ -3,105 +3,105 @@
     "accountId": "test-account-123",
     "expenseId": "5c1121d7-20c8-4890-81c0-949bd60523a3",
     "category": "Salaries",
-    "amount": 1489153.5,
+    "amount": 5956614000,
     "timestamp": "2022-08-27T18:35:57Z"
   },
   {
     "accountId": "test-account-123",
     "expenseId": "4529aaef-39d0-4188-9256-8c8fd5bad7ca",
     "category": "Office",
-    "amount": 1579039.97,
+    "amount": 6316159880,
     "timestamp": "2020-05-12T19:39:50Z"
   },
   {
     "accountId": "test-account-123",
     "expenseId": "fca4f2d0-c3d7-4246-a04e-626ab4045c40",
     "category": "Office",
-    "amount": 607415.3,
+    "amount": 2429661200,
     "timestamp": "2021-06-08T13:48:10Z"
   },
   {
     "accountId": "test-account-123",
     "expenseId": "34de9517-153e-4505-9af8-dc8440e28dd9",
     "category": "Salaries",
-    "amount": 171044.25,
+    "amount": 684177000,
     "timestamp": "2022-10-03T22:21:20Z"
   },
   {
     "accountId": "test-account-123",
     "expenseId": "c21c08e8-51b9-40f1-be37-b5116cd8d174",
     "category": "Salaries",
-    "amount": 303743.89,
+    "amount": 1214975560,
     "timestamp": "2020-03-18T00:41:00Z"
   },
   {
     "accountId": "test-account-123",
     "expenseId": "fb2dba2d-c186-4165-ab7d-66ce276041a4",
     "category": "Salaries",
-    "amount": 1707710.31,
+    "amount": 6830841240,
     "timestamp": "2020-05-04T20:18:41Z"
   },
   {
     "accountId": "test-account-123",
     "expenseId": "ba5ded78-639c-46ce-80bf-7d50642a1438",
     "category": "Office",
-    "amount": 1375535.38,
+    "amount": 5502141520,
     "timestamp": "2021-11-04T02:56:56Z"
   },
   {
     "accountId": "test-account-123",
     "expenseId": "c2f642b5-399b-48d7-9deb-e6a4eed0b9fa",
     "category": "Office",
-    "amount": 858502.63,
+    "amount": 3434010520,
     "timestamp": "2020-09-04T19:49:29Z"
   },
   {
     "accountId": "test-account-123",
     "expenseId": "fc8b38d8-388a-4898-9ca5-b942bbbec035",
     "category": "Professional",
-    "amount": 1557261.18,
+    "amount": 6229044720,
     "timestamp": "2020-07-22T02:35:40Z"
   },
   {
     "accountId": "test-account-123",
     "expenseId": "36764f05-d204-4f71-bbd3-9d0263ea6863",
     "category": "Salaries",
-    "amount": 586616.74,
+    "amount": 2346466960,
     "timestamp": "2021-01-18T01:06:07Z"
   },
   {
     "accountId": "test-account-123",
     "expenseId": "39e86828-36f4-4282-9599-bc4c42bae3a1",
     "category": "Office",
-    "amount": 1677605.54,
+    "amount": 6710422160,
     "timestamp": "2022-07-12T16:33:04Z"
   },
   {
     "accountId": "test-account-123",
     "expenseId": "66a3d687-05b0-4796-9b09-14941aa73031",
     "category": "Salaries",
-    "amount": 1280249.59,
+    "amount": 5120998360,
     "timestamp": "2021-09-09T05:45:26Z"
   },
   {
     "accountId": "test-account-123",
     "expenseId": "cfbd98f2-c6ed-4bcc-b604-f3d330c5f31e",
     "category": "Professional",
-    "amount": 1851906.49,
+    "amount": 7407625960,
     "timestamp": "2021-12-24T09:18:27Z"
   },
   {
     "accountId": "test-account-123",
     "expenseId": "c68ccd7e-601c-4b09-b76f-c5a19308e526",
     "category": "Salaries",
-    "amount": 1791685.13,
+    "amount": 7166740520,
     "timestamp": "2022-08-05T03:18:23Z"
   },
   {
     "accountId": "test-account-123",
     "expenseId": "3f19431c-3403-468b-9421-c9f54d466052",
     "category": "Salaries",
-    "amount": 589917.71,
+    "amount": 2359670840,
     "timestamp": "2021-05-19T17:43:00Z"
   }
 ]

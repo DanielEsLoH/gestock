@@ -5,7 +5,7 @@
     "expenseSummaryId": "5229a14b-443b-4551-9d01-4bc0dc820d05",
     "date": "2023-11-23T11:54:21Z",
     "category": "Office",
-    "amount": 48
+    "amount": 192000
   },
   {
     "accountId": "test-account-123",
@@ -13,7 +13,7 @@
     "expenseSummaryId": "c17ff164-1ab4-41e7-91a8-8aab790dcd88",
     "date": "2023-08-13T09:49:33Z",
     "category": "Salaries",
-    "amount": 66
+    "amount": 264000
   },
   {
     "accountId": "test-account-123",
@@ -21,7 +21,7 @@
     "expenseSummaryId": "45ecf33b-6c3b-4e55-84ec-fa30b88aa03f",
     "date": "2023-07-24T09:26:56Z",
     "category": "Salaries",
-    "amount": 63
+    "amount": 252000
   },
   {
     "accountId": "test-account-123",
@@ -29,7 +29,7 @@
     "expenseSummaryId": "e495b850-cf2b-4b76-93c2-d4241c859cd0",
     "date": "2023-05-24T05:24:15Z",
     "category": "Salaries",
-    "amount": 77
+    "amount": 308000
   },
   {
     "accountId": "test-account-123",
@@ -37,7 +37,7 @@
     "expenseSummaryId": "376f8d90-8b66-4cff-bd4e-2fcd14a42845",
     "date": "2023-05-07T12:33:09Z",
     "category": "Office",
-    "amount": 67
+    "amount": 268000
   },
   {
     "accountId": "test-account-123",
@@ -45,7 +45,7 @@
     "expenseSummaryId": "744bb795-0f98-45cd-99ae-45dddb99c3e4",
     "date": "2024-01-08T22:08:30Z",
     "category": "Salaries",
-    "amount": 12
+    "amount": 48000
   },
   {
     "accountId": "test-account-123",
@@ -53,7 +53,7 @@
     "expenseSummaryId": "4a6a10e5-4f44-4aef-a1bd-c57075f3c44f",
     "date": "2023-06-11T08:03:25Z",
     "category": "Office",
-    "amount": 57
+    "amount": 228000
   },
   {
     "accountId": "test-account-123",
@@ -61,7 +61,7 @@
     "expenseSummaryId": "d62a1123-18b3-4784-bbdd-70a29f773f99",
     "date": "2023-07-10T00:15:57Z",
     "category": "Office",
-    "amount": 34
+    "amount": 136000
   },
   {
     "accountId": "test-account-123",
@@ -69,7 +69,7 @@
     "expenseSummaryId": "ace2b05e-31de-48bd-a179-e59d16757456",
     "date": "2023-12-16T19:29:15Z",
     "category": "Salaries",
-    "amount": 43
+    "amount": 172000
   },
   {
     "accountId": "test-account-123",
@@ -77,7 +77,7 @@
     "expenseSummaryId": "f24f6dd9-dd18-42f9-a76a-95d8198b7636",
     "date": "2023-07-04T04:49:15Z",
     "category": "Salaries",
-    "amount": 62
+    "amount": 248000
   },
   {
     "accountId": "test-account-123",
@@ -85,7 +85,7 @@
     "expenseSummaryId": "2a2a88f0-0148-4667-8bab-7d129586bdf7",
     "date": "2023-10-18T18:41:07Z",
     "category": "Professional",
-    "amount": 28
+    "amount": 112000
   },
   {
     "accountId": "test-account-123",
@@ -93,7 +93,7 @@
     "expenseSummaryId": "560c166c-7093-4583-a007-5af2a88f1dab",
     "date": "2024-01-01T03:49:45Z",
     "category": "Office",
-    "amount": 65
+    "amount": 260000
   },
   {
     "accountId": "test-account-123",
@@ -101,7 +101,7 @@
     "expenseSummaryId": "6faadd8d-5cdd-4b35-a3e8-cb0ada67de3a",
     "date": "2023-12-23T19:25:39Z",
     "category": "Salaries",
-    "amount": 54
+    "amount": 216000
   },
   {
     "accountId": "test-account-123",
@@ -109,7 +109,7 @@
     "expenseSummaryId": "be4755fd-0f7c-4292-a0ad-539ad1371f6e",
     "date": "2023-03-15T12:50:41Z",
     "category": "Salaries",
-    "amount": 97
+    "amount": 388000
   },
   {
     "accountId": "test-account-123",
@@ -117,7 +117,7 @@
     "expenseSummaryId": "46a33080-d239-49b2-9f0a-5d2d576a3966",
     "date": "2023-04-23T21:27:57Z",
     "category": "Professional",
-    "amount": 94
+    "amount": 376000
   },
   {
     "accountId": "test-account-123",
@@ -125,7 +125,7 @@
     "expenseSummaryId": "40dd45c1-b575-48d1-b1a0-2bf474c8b591",
     "date": "2023-05-11T09:55:13Z",
     "category": "Salaries",
-    "amount": 24
+    "amount": 96000
   },
   {
     "accountId": "test-account-123",
@@ -133,7 +133,7 @@
     "expenseSummaryId": "4d452c32-21fd-4891-a5fe-aa481861e0ad",
     "date": "2023-06-16T16:48:42Z",
     "category": "Office",
-    "amount": 59
+    "amount": 236000
   },
   {
     "accountId": "test-account-123",
@@ -141,7 +141,7 @@
     "expenseSummaryId": "acd41481-9384-4ff1-8004-a3df027a0209",
     "date": "2023-09-30T05:02:44Z",
     "category": "Office",
-    "amount": 54
+    "amount": 216000
   },
   {
     "accountId": "test-account-123",
@@ -149,7 +149,7 @@
     "expenseSummaryId": "9b523e04-fdae-4b0b-a6d9-58ef64c75431",
     "date": "2023-07-03T22:12:16Z",
     "category": "Office",
-    "amount": 25
+    "amount": 100000
   },
   {
     "accountId": "test-account-123",
@@ -157,7 +157,7 @@
     "expenseSummaryId": "4ada8077-3799-4690-ae35-c552e4100b1a",
     "date": "2023-08-23T11:48:59Z",
     "category": "Professional",
-    "amount": 54
+    "amount": 216000
   },
   {
     "accountId": "test-account-123",
@@ -165,7 +165,7 @@
     "expenseSummaryId": "f6041c02-7b2a-4de3-8aed-81b82528ffe4",
     "date": "2023-09-14T06:41:32Z",
     "category": "Professional",
-    "amount": 37
+    "amount": 148000
   },
   {
     "accountId": "test-account-123",
@@ -173,7 +173,7 @@
     "expenseSummaryId": "d68b89d4-3332-4e29-8e5a-3c0483af6688",
     "date": "2023-06-11T13:00:11Z",
     "category": "Office",
-    "amount": 96
+    "amount": 384000
   },
   {
     "accountId": "test-account-123",
@@ -181,7 +181,7 @@
     "expenseSummaryId": "9ef8296f-f2b3-4733-8664-7ef5e388734b",
     "date": "2024-01-03T17:10:35Z",
     "category": "Office",
-    "amount": 85
+    "amount": 340000
   },
   {
     "accountId": "test-account-123",
@@ -189,7 +189,7 @@
     "expenseSummaryId": "c9a46c10-c426-4cbe-b805-83ab5d963e19",
     "date": "2023-08-20T13:33:02Z",
     "category": "Salaries",
-    "amount": 55
+    "amount": 220000
   },
   {
     "accountId": "test-account-123",
@@ -197,7 +197,7 @@
     "expenseSummaryId": "8f70eaa2-fb78-4b32-bf2f-67c1e4988d2f",
     "date": "2023-12-23T06:16:20Z",
     "category": "Salaries",
-    "amount": 7
+    "amount": 28000
   },
   {
     "accountId": "test-account-123",
@@ -205,7 +205,7 @@
     "expenseSummaryId": "f222583a-d003-44e1-920d-0f9743a873dc",
     "date": "2023-09-20T10:01:41Z",
     "category": "Professional",
-    "amount": 90
+    "amount": 360000
   },
   {
     "accountId": "test-account-123",
@@ -213,7 +213,7 @@
     "expenseSummaryId": "0675c624-1e11-4df8-821f-9a2d744dba09",
     "date": "2023-09-02T16:42:29Z",
     "category": "Office",
-    "amount": 99
+    "amount": 396000
   },
   {
     "accountId": "test-account-123",
@@ -221,7 +221,7 @@
     "expenseSummaryId": "abe1d0e1-65bf-49dc-801d-ba669aae8e33",
     "date": "2023-07-05T08:02:52Z",
     "category": "Salaries",
-    "amount": 52
+    "amount": 208000
   },
   {
     "accountId": "test-account-123",
@@ -229,7 +229,7 @@
     "expenseSummaryId": "6aef1c35-a1c4-4a58-9be0-b6488a622eaa",
     "date": "2023-12-01T05:58:17Z",
     "category": "Professional",
-    "amount": 71
+    "amount": 284000
   },
   {
     "accountId": "test-account-123",
@@ -237,7 +237,7 @@
     "expenseSummaryId": "43b606a2-45c6-4da4-85aa-f219aa6a2960",
     "date": "2023-08-29T13:03:56Z",
     "category": "Salaries",
-    "amount": 4
+    "amount": 16000
   },
   {
     "accountId": "test-account-123",
@@ -245,7 +245,7 @@
     "expenseSummaryId": "db5b8de2-7dc0-4efe-a937-34e537a3f8ec",
     "date": "2023-09-24T19:24:50Z",
     "category": "Salaries",
-    "amount": 7
+    "amount": 28000
   },
   {
     "accountId": "test-account-123",
@@ -253,7 +253,7 @@
     "expenseSummaryId": "b0760c67-c326-4f6d-9511-cb2b6896a11f",
     "date": "2023-03-29T09:33:35Z",
     "category": "Office",
-    "amount": 48
+    "amount": 192000
   },
   {
     "accountId": "test-account-123",
@@ -261,7 +261,7 @@
     "expenseSummaryId": "8404fc43-72be-4a3a-bf55-313256b0e083",
     "date": "2024-01-08T08:48:51Z",
     "category": "Professional",
-    "amount": 15
+    "amount": 60000
   },
   {
     "accountId": "test-account-123",
@@ -269,7 +269,7 @@
     "expenseSummaryId": "b149ef3b-f9cc-4560-ab29-4f74ec138c71",
     "date": "2024-03-08T11:57:57Z",
     "category": "Professional",
-    "amount": 94
+    "amount": 376000
   },
   {
     "accountId": "test-account-123",
@@ -277,7 +277,7 @@
     "expenseSummaryId": "7e793e60-2edc-4adf-9d6f-bb6d09c93481",
     "date": "2024-02-15T10:50:32Z",
     "category": "Office",
-    "amount": 94
+    "amount": 376000
   },
   {
     "accountId": "test-account-123",
@@ -285,7 +285,7 @@
     "expenseSummaryId": "e56345be-2ac9-4ca7-a9a2-1c59846381f7",
     "date": "2023-08-13T13:25:33Z",
     "category": "Salaries",
-    "amount": 10
+    "amount": 40000
   },
   {
     "accountId": "test-account-123",
@@ -293,7 +293,7 @@
     "expenseSummaryId": "cdfd8bfd-1851-4cd1-ab5f-e66e7260ba92",
     "date": "2024-03-11T08:04:25Z",
     "category": "Office",
-    "amount": 18
+    "amount": 72000
   },
   {
     "accountId": "test-account-123",
@@ -301,7 +301,7 @@
     "expenseSummaryId": "eb8f9ea8-2cdb-4461-80fc-9dd571afb200",
     "date": "2023-08-26T01:40:17Z",
     "category": "Salaries",
-    "amount": 82
+    "amount": 328000
   },
   {
     "accountId": "test-account-123",
@@ -309,7 +309,7 @@
     "expenseSummaryId": "1fe8f10b-24d0-4906-a66c-96ff7783671b",
     "date": "2024-02-03T20:08:28Z",
     "category": "Salaries",
-    "amount": 95
+    "amount": 380000
   },
   {
     "accountId": "test-account-123",
@@ -317,7 +317,7 @@
     "expenseSummaryId": "6cd41a74-4084-4e91-b009-5ab41730d258",
     "date": "2023-10-07T22:01:48Z",
     "category": "Office",
-    "amount": 91
+    "amount": 364000
   },
   {
     "accountId": "test-account-123",
@@ -325,7 +325,7 @@
     "expenseSummaryId": "d953877c-72d8-4189-8078-6ed4e46a23a4",
     "date": "2024-01-27T17:00:00Z",
     "category": "Salaries",
-    "amount": 77
+    "amount": 308000
   },
   {
     "accountId": "test-account-123",
@@ -333,7 +333,7 @@
     "expenseSummaryId": "e328c686-7e18-41b3-92e2-e2ddaf3a4a31",
     "date": "2023-07-03T02:00:59Z",
     "category": "Professional",
-    "amount": 62
+    "amount": 248000
   },
   {
     "accountId": "test-account-123",
@@ -341,7 +341,7 @@
     "expenseSummaryId": "becde53e-60b5-40d1-be9c-27763057f3ac",
     "date": "2023-12-20T22:03:05Z",
     "category": "Salaries",
-    "amount": 34
+    "amount": 136000
   },
   {
     "accountId": "test-account-123",
@@ -349,7 +349,7 @@
     "expenseSummaryId": "803d384f-69a9-450d-8ed3-96d202dbafcd",
     "date": "2023-08-05T04:51:45Z",
     "category": "Salaries",
-    "amount": 87
+    "amount": 348000
   },
   {
     "accountId": "test-account-123",
@@ -357,7 +357,7 @@
     "expenseSummaryId": "4749833f-3eaa-452f-bb28-209988f7918d",
     "date": "2024-01-15T07:35:22Z",
     "category": "Salaries",
-    "amount": 12
+    "amount": 48000
   },
   {
     "accountId": "test-account-123",
@@ -365,7 +365,7 @@
     "expenseSummaryId": "852af507-0551-41c8-9d95-a90ed9b1a07c",
     "date": "2023-03-15T14:01:06Z",
     "category": "Salaries",
-    "amount": 88
+    "amount": 352000
   },
   {
     "accountId": "test-account-123",
@@ -373,7 +373,7 @@
     "expenseSummaryId": "45718dc4-41ef-4a92-b270-3f7eb445fbef",
     "date": "2024-01-30T18:16:56Z",
     "category": "Salaries",
-    "amount": 100
+    "amount": 400000
   },
   {
     "accountId": "test-account-123",
@@ -381,7 +381,7 @@
     "expenseSummaryId": "5763fb5e-a9b1-41a7-b873-0ecfad5c749c",
     "date": "2023-12-20T11:34:30Z",
     "category": "Office",
-    "amount": 98
+    "amount": 392000
   },
   {
     "accountId": "test-account-123",
@@ -389,7 +389,7 @@
     "expenseSummaryId": "87122213-3ad3-418a-8914-5a35e01bb69b",
     "date": "2023-08-18T16:03:36Z",
     "category": "Professional",
-    "amount": 78
+    "amount": 312000
   },
   {
     "accountId": "test-account-123",
@@ -397,6 +397,6 @@
     "expenseSummaryId": "10ec2f80-6da0-4909-b8fd-7c5cfdb7bef4",
     "date": "2023-08-06T08:45:27Z",
     "category": "Office",
-    "amount": 12
+    "amount": 48000
   }
 ]

@@ -1,9 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import {
-  FetchBaseQueryError,
-} from "@reduxjs/toolkit/query";
+import { FetchBaseQueryError } from "@reduxjs/toolkit/query";
 import Header from "@/app/_components/Header";
 import { useAppDispatch, useAppSelector } from "../redux";
 import { setIsDarkMode } from "@/state";
@@ -12,7 +10,12 @@ import { useUpdateUserMutation, useChangePasswordMutation } from "@/state/api";
 import toast from "react-hot-toast";
 
 function isFetchBaseQueryError(error: unknown): error is FetchBaseQueryError {
-  return typeof error === 'object' && error != null && 'status' in error && 'data' in error;
+  return (
+    typeof error === "object" &&
+    error != null &&
+    "status" in error &&
+    "data" in error
+  );
 }
 
 const Settings = () => {
@@ -22,7 +25,8 @@ const Settings = () => {
   const account = useAppSelector((state) => state.auth.account);
 
   const [updateUser, { isLoading: isUpdatingUser }] = useUpdateUserMutation();
-  const [changePassword, { isLoading: isChangingPassword }] = useChangePasswordMutation();
+  const [changePassword, { isLoading: isChangingPassword }] =
+    useChangePasswordMutation();
 
   const [currentPassword, setCurrentPassword] = useState("");
   const [newPassword, setNewPassword] = useState("");
@@ -168,7 +172,7 @@ const Settings = () => {
                   checked={isDarkMode}
                   onChange={(e) => handleThemeChange(e.target.checked)}
                 />
-                <div className="w-11 h-6 bg-gray-200 rounded-full peer peer-focus:ring-blue-400 dark:peer-focus:ring-blue-800 dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
+                <div className="w-11 h-6 bg-gray-200 rounded-full peer peer-focus:ring-blue-400 dark:peer-focus:ring-blue-800 dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-0.5 after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
               </label>
             </div>
           </div>

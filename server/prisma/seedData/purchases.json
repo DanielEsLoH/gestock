@@ -5,8 +5,8 @@
     "productId": "d35623ee-bef6-42b2-8776-2f99f8bb4782",
     "timestamp": "2007-09-28T13:56:51Z",
     "quantity": 875,
-    "unitCost": 4163.31,
-    "totalCost": 7871.43
+    "unitCost": 16653240,
+    "totalCost": 31485720
   },
   {
     "accountId": "test-account-123",
@@ -14,8 +14,8 @@
     "productId": "8ac1ac77-7358-425e-be16-0bdde9f02e59",
     "timestamp": "2015-02-01T13:04:43Z",
     "quantity": 471,
-    "unitCost": 5673.17,
-    "totalCost": 485.48
+    "unitCost": 22692680,
+    "totalCost": 1941920
   },
   {
     "accountId": "test-account-123",
@@ -23,8 +23,8 @@
     "productId": "1afc136b-4d9f-4e8e-aace-8e1df908a404",
     "timestamp": "2010-10-22T19:38:20Z",
     "quantity": 37,
-    "unitCost": 3835.06,
-    "totalCost": 4202.25
+    "unitCost": 15340240,
+    "totalCost": 16809000
   },
   {
     "accountId": "test-account-123",
@@ -32,8 +32,8 @@
     "productId": "af84cc12-4fea-4f58-aece-f2ce92ca9580",
     "timestamp": "2020-01-25T13:30:58Z",
     "quantity": 201,
-    "unitCost": 1822.27,
-    "totalCost": 8028.29
+    "unitCost": 7289080,
+    "totalCost": 32113160
   },
   {
     "accountId": "test-account-123",
@@ -41,8 +41,8 @@
     "productId": "86e3bb1c-2f5d-4774-98f3-4df7cddd0a0f",
     "timestamp": "2011-12-30T12:54:41Z",
     "quantity": 789,
-    "unitCost": 9238.02,
-    "totalCost": 5086.57
+    "unitCost": 36952080,
+    "totalCost": 20346280
   },
   {
     "accountId": "test-account-123",
@@ -50,8 +50,8 @@
     "productId": "26b017c6-06d8-443f-9b4a-d6b1cee6f4c0",
     "timestamp": "2014-02-26T01:13:31Z",
     "quantity": 251,
-    "unitCost": 2443.32,
-    "totalCost": 9520.42
+    "unitCost": 9773280,
+    "totalCost": 38081680
   },
   {
     "accountId": "test-account-123",
@@ -59,8 +59,8 @@
     "productId": "440c9e80-6bf8-4eb3-b2d2-f81936d67de3",
     "timestamp": "2001-11-18T23:49:33Z",
     "quantity": 418,
-    "unitCost": 5085.79,
-    "totalCost": 5394.89
+    "unitCost": 20343160,
+    "totalCost": 21579560
   },
   {
     "accountId": "test-account-123",
@@ -68,8 +68,8 @@
     "productId": "98255f4e-40a6-470f-89a5-0792729f8947",
     "timestamp": "2020-04-27T08:53:44Z",
     "quantity": 926,
-    "unitCost": 8626.52,
-    "totalCost": 3526.35
+    "unitCost": 34506080,
+    "totalCost": 14105400
   },
   {
     "accountId": "test-account-123",
@@ -77,8 +77,8 @@
     "productId": "2a339fb2-f9f3-43bc-a85a-b217a0a38f12",
     "timestamp": "2020-02-05T13:02:55Z",
     "quantity": 754,
-    "unitCost": 9052.79,
-    "totalCost": 8035.97
+    "unitCost": 36211160,
+    "totalCost": 32143880
   },
   {
     "accountId": "test-account-123",
@@ -86,8 +86,8 @@
     "productId": "8a8391b2-b4ac-4847-b652-66ffd8d65875",
     "timestamp": "2020-05-07T16:41:13Z",
     "quantity": 365,
-    "unitCost": 1105.02,
-    "totalCost": 361.77
+    "unitCost": 4420080,
+    "totalCost": 1447080
   },
   {
     "accountId": "test-account-123",
@@ -95,8 +95,8 @@
     "productId": "be2157fb-7454-405e-9511-bf7ba81b7726",
     "timestamp": "2014-08-12T16:37:41Z",
     "quantity": 975,
-    "unitCost": 4783.47,
-    "totalCost": 9517.85
+    "unitCost": 19133880,
+    "totalCost": 38071400
   },
   {
     "accountId": "test-account-123",
@@ -104,8 +104,8 @@
     "productId": "fdf1ba3d-fa06-4ce5-90ff-d081c5d37176",
     "timestamp": "2008-12-07T16:18:59Z",
     "quantity": 286,
-    "unitCost": 6910.82,
-    "totalCost": 9006.07
+    "unitCost": 27643280,
+    "totalCost": 36024280
   },
   {
     "accountId": "test-account-123",
@@ -113,8 +113,8 @@
     "productId": "afded6df-058f-477d-9878-e0e0b1d3dff3",
     "timestamp": "2005-12-29T10:50:55Z",
     "quantity": 71,
-    "unitCost": 4058.81,
-    "totalCost": 5983.42
+    "unitCost": 16235240,
+    "totalCost": 23933680
   },
   {
     "accountId": "test-account-123",
@@ -122,8 +122,8 @@
     "productId": "daa29167-82a7-474b-9687-b8b903e7ec69",
     "timestamp": "2007-08-15T18:41:49Z",
     "quantity": 963,
-    "unitCost": 2198.44,
-    "totalCost": 4935.68
+    "unitCost": 8793760,
+    "totalCost": 19742720
   },
   {
     "accountId": "test-account-123",
@@ -131,8 +131,8 @@
     "productId": "ccb83982-71f3-4497-bad8-7e64c6920dc6",
     "timestamp": "2014-12-05T06:28:48Z",
     "quantity": 614,
-    "unitCost": 6565.99,
-    "totalCost": 6406.98
+    "unitCost": 26263960,
+    "totalCost": 25627920
   },
   {
     "accountId": "test-account-123",
@@ -140,8 +140,8 @@
     "productId": "1936d406-e89e-40e4-bff7-1827532269d4",
     "timestamp": "2003-12-17T12:52:02Z",
     "quantity": 193,
-    "unitCost": 2562.72,
-    "totalCost": 788.08
+    "unitCost": 10250880,
+    "totalCost": 3152320
   },
   {
     "accountId": "test-account-123",
@@ -149,8 +149,8 @@
     "productId": "c849a535-5f8b-47e3-889c-015693a644ac",
     "timestamp": "2014-05-13T17:09:07Z",
     "quantity": 585,
-    "unitCost": 1580.69,
-    "totalCost": 2633.43
+    "unitCost": 6322760,
+    "totalCost": 10533720
   },
   {
     "accountId": "test-account-123",
@@ -158,8 +158,8 @@
     "productId": "0c3e80ee-59b3-4fc4-b760-8b07acc2d3ae",
     "timestamp": "2006-10-21T15:28:13Z",
     "quantity": 938,
-    "unitCost": 6197.05,
-    "totalCost": 3487.61
+    "unitCost": 24788200,
+    "totalCost": 13950440
   },
   {
     "accountId": "test-account-123",
@@ -167,8 +167,8 @@
     "productId": "d8f5bee3-f3eb-4071-a124-6b857e0fd798",
     "timestamp": "2002-08-23T21:20:02Z",
     "quantity": 388,
-    "unitCost": 3280.29,
-    "totalCost": 21.24
+    "unitCost": 13121160,
+    "totalCost": 84960
   },
   {
     "accountId": "test-account-123",
@@ -176,8 +176,8 @@
     "productId": "8d15de86-0e4a-4414-9166-7a33610202d3",
     "timestamp": "2022-09-09T02:34:59Z",
     "quantity": 463,
-    "unitCost": 4646.46,
-    "totalCost": 273.21
+    "unitCost": 18585840,
+    "totalCost": 1092840
   },
   {
     "accountId": "test-account-123",
@@ -185,8 +185,8 @@
     "productId": "ea8fd0b9-c2d9-4d43-9c23-44cb99d079bb",
     "timestamp": "2013-04-06T06:29:40Z",
     "quantity": 893,
-    "unitCost": 2857.95,
-    "totalCost": 7423.21
+    "unitCost": 11431800,
+    "totalCost": 29692840
   },
   {
     "accountId": "test-account-123",
@@ -194,8 +194,8 @@
     "productId": "25d01c80-bca1-4a00-b1d0-0fbd39ff9e89",
     "timestamp": "2002-06-17T12:03:13Z",
     "quantity": 22,
-    "unitCost": 3180.14,
-    "totalCost": 9077.46
+    "unitCost": 12720560,
+    "totalCost": 36309840
   },
   {
     "accountId": "test-account-123",
@@ -203,8 +203,8 @@
     "productId": "1d6df6e3-b7ea-4507-9d66-87c6ee8ed5b9",
     "timestamp": "2017-05-26T03:42:34Z",
     "quantity": 70,
-    "unitCost": 4308.81,
-    "totalCost": 1589.27
+    "unitCost": 17235240,
+    "totalCost": 6357080
   },
   {
     "accountId": "test-account-123",
@@ -212,8 +212,8 @@
     "productId": "000a8c23-5bca-436c-a216-4e747a94c511",
     "timestamp": "2013-02-03T13:03:56Z",
     "quantity": 208,
-    "unitCost": 3424.81,
-    "totalCost": 9545.07
+    "unitCost": 13699240,
+    "totalCost": 38180280
   },
   {
     "accountId": "test-account-123",
@@ -221,8 +221,8 @@
     "productId": "c5b600dc-6bfb-492a-b335-c3cc8c707959",
     "timestamp": "2020-03-16T04:44:49Z",
     "quantity": 309,
-    "unitCost": 9757.04,
-    "totalCost": 9843.24
+    "unitCost": 39028160,
+    "totalCost": 39372960
   },
   {
     "accountId": "test-account-123",
@@ -230,8 +230,8 @@
     "productId": "9d5fafbc-312b-47e8-ada1-283918f0c3b5",
     "timestamp": "2011-08-01T04:44:36Z",
     "quantity": 97,
-    "unitCost": 4437.3,
-    "totalCost": 7227.92
+    "unitCost": 17749200,
+    "totalCost": 28911680
   },
   {
     "accountId": "test-account-123",
@@ -239,8 +239,8 @@
     "productId": "0114d5d4-ae48-46fa-b0ca-afe60eb88add",
     "timestamp": "2021-10-23T09:58:14Z",
     "quantity": 727,
-    "unitCost": 6706.78,
-    "totalCost": 3444.68
+    "unitCost": 26827120,
+    "totalCost": 13778720
   },
   {
     "accountId": "test-account-123",
@@ -248,8 +248,8 @@
     "productId": "e5b0da8c-148d-4680-b262-8609fb8a10da",
     "timestamp": "2013-12-25T00:37:26Z",
     "quantity": 246,
-    "unitCost": 7074.43,
-    "totalCost": 1551.41
+    "unitCost": 28297720,
+    "totalCost": 6205640
   },
   {
     "accountId": "test-account-123",
@@ -257,8 +257,8 @@
     "productId": "2be5b024-2c96-4f29-912c-c6f36353f799",
     "timestamp": "2001-10-29T19:34:59Z",
     "quantity": 193,
-    "unitCost": 1576.29,
-    "totalCost": 5458.34
+    "unitCost": 6305160,
+    "totalCost": 21833360
   },
   {
     "accountId": "test-account-123",
@@ -266,8 +266,8 @@
     "productId": "fcf2e432-62a3-4b6f-a34d-36e42a12272e",
     "timestamp": "2008-05-09T00:34:59Z",
     "quantity": 265,
-    "unitCost": 9629.95,
-    "totalCost": 9902.55
+    "unitCost": 38519800,
+    "totalCost": 39610200
   },
   {
     "accountId": "test-account-123",
@@ -275,8 +275,8 @@
     "productId": "fc4c81e5-f1ac-40f5-8c6f-da3fbad5599d",
     "timestamp": "2018-12-12T10:12:24Z",
     "quantity": 342,
-    "unitCost": 9107.59,
-    "totalCost": 9187.51
+    "unitCost": 36430360,
+    "totalCost": 36750040
   },
   {
     "accountId": "test-account-123",
@@ -284,8 +284,8 @@
     "productId": "07238d8e-0037-4972-87ca-0df206ee3e42",
     "timestamp": "2022-11-23T16:45:20Z",
     "quantity": 623,
-    "unitCost": 3511.85,
-    "totalCost": 8448.84
+    "unitCost": 14047400,
+    "totalCost": 33795360
   },
   {
     "accountId": "test-account-123",
@@ -293,8 +293,8 @@
     "productId": "154b7860-23a2-4564-ad99-1745ab7122ef",
     "timestamp": "2016-06-18T10:26:07Z",
     "quantity": 856,
-    "unitCost": 584.88,
-    "totalCost": 6455.21
+    "unitCost": 2339520,
+    "totalCost": 25820840
   },
   {
     "accountId": "test-account-123",
@@ -302,8 +302,8 @@
     "productId": "8d4bf814-65d4-4df4-84cc-68911d925fdf",
     "timestamp": "2003-08-07T17:41:10Z",
     "quantity": 330,
-    "unitCost": 9835.78,
-    "totalCost": 311.95
+    "unitCost": 39343120,
+    "totalCost": 1247800
   },
   {
     "accountId": "test-account-123",
@@ -311,8 +311,8 @@
     "productId": "a52bf1bd-3d35-4cd2-849a-354e3952e2d2",
     "timestamp": "2007-02-01T19:40:46Z",
     "quantity": 265,
-    "unitCost": 6506.44,
-    "totalCost": 6583.9
+    "unitCost": 26025760,
+    "totalCost": 26335600
   },
   {
     "accountId": "test-account-123",
@@ -320,8 +320,8 @@
     "productId": "d35623ee-bef6-42b2-8776-2f99f8bb4782",
     "timestamp": "2012-07-16T01:03:33Z",
     "quantity": 395,
-    "unitCost": 4122.4,
-    "totalCost": 4838.66
+    "unitCost": 16489600,
+    "totalCost": 19354640
   },
   {
     "accountId": "test-account-123",
@@ -329,8 +329,8 @@
     "productId": "8ac1ac77-7358-425e-be16-0bdde9f02e59",
     "timestamp": "2002-02-19T15:33:07Z",
     "quantity": 230,
-    "unitCost": 2500.44,
-    "totalCost": 7003.48
+    "unitCost": 10001760,
+    "totalCost": 28013920
   },
   {
     "accountId": "test-account-123",
@@ -338,8 +338,8 @@
     "productId": "1afc136b-4d9f-4e8e-aace-8e1df908a404",
     "timestamp": "2005-04-20T20:56:35Z",
     "quantity": 770,
-    "unitCost": 3563.47,
-    "totalCost": 2068.71
+    "unitCost": 14253880,
+    "totalCost": 8274840
   },
   {
     "accountId": "test-account-123",
@@ -347,8 +347,8 @@
     "productId": "af84cc12-4fea-4f58-aece-f2ce92ca9580",
     "timestamp": "2013-01-08T17:38:44Z",
     "quantity": 903,
-    "unitCost": 6854.34,
-    "totalCost": 6894.18
+    "unitCost": 27417360,
+    "totalCost": 27576720
   },
   {
     "accountId": "test-account-123",
@@ -356,8 +356,8 @@
     "productId": "86e3bb1c-2f5d-4774-98f3-4df7cddd0a0f",
     "timestamp": "2018-11-16T06:44:31Z",
     "quantity": 220,
-    "unitCost": 170.61,
-    "totalCost": 3140.28
+    "unitCost": 682440,
+    "totalCost": 12561120
   },
   {
     "accountId": "test-account-123",
@@ -365,8 +365,8 @@
     "productId": "26b017c6-06d8-443f-9b4a-d6b1cee6f4c0",
     "timestamp": "2022-02-13T05:52:33Z",
     "quantity": 625,
-    "unitCost": 5823.23,
-    "totalCost": 4498.82
+    "unitCost": 23292920,
+    "totalCost": 17995280
   },
   {
     "accountId": "test-account-123",
@@ -374,8 +374,8 @@
     "productId": "440c9e80-6bf8-4eb3-b2d2-f81936d67de3",
     "timestamp": "2008-05-05T23:57:50Z",
     "quantity": 260,
-    "unitCost": 1320.91,
-    "totalCost": 6951.15
+    "unitCost": 5283640,
+    "totalCost": 27804600
   },
   {
     "accountId": "test-account-123",
@@ -383,8 +383,8 @@
     "productId": "98255f4e-40a6-470f-89a5-0792729f8947",
     "timestamp": "2010-06-27T23:54:15Z",
     "quantity": 72,
-    "unitCost": 6999.3,
-    "totalCost": 4171.88
+    "unitCost": 27997200,
+    "totalCost": 16687520
   },
   {
     "accountId": "test-account-123",
@@ -392,8 +392,8 @@
     "productId": "2a339fb2-f9f3-43bc-a85a-b217a0a38f12",
     "timestamp": "2018-06-04T02:16:54Z",
     "quantity": 846,
-    "unitCost": 1424.7,
-    "totalCost": 604.87
+    "unitCost": 5698800,
+    "totalCost": 2419480
   },
   {
     "accountId": "test-account-123",
@@ -401,8 +401,8 @@
     "productId": "8a8391b2-b4ac-4847-b652-66ffd8d65875",
     "timestamp": "2019-12-08T22:05:22Z",
     "quantity": 998,
-    "unitCost": 9289.05,
-    "totalCost": 3108.03
+    "unitCost": 37156200,
+    "totalCost": 12432120
   },
   {
     "accountId": "test-account-123",
@@ -410,8 +410,8 @@
     "productId": "be2157fb-7454-405e-9511-bf7ba81b7726",
     "timestamp": "2005-01-25T15:21:10Z",
     "quantity": 311,
-    "unitCost": 1386.68,
-    "totalCost": 8924.26
+    "unitCost": 5546720,
+    "totalCost": 35697040
   },
   {
     "accountId": "test-account-123",
@@ -419,8 +419,8 @@
     "productId": "fdf1ba3d-fa06-4ce5-90ff-d081c5d37176",
     "timestamp": "2022-09-27T13:23:04Z",
     "quantity": 71,
-    "unitCost": 6751.76,
-    "totalCost": 2580.36
+    "unitCost": 27007040,
+    "totalCost": 10321440
   },
   {
     "accountId": "test-account-123",
@@ -428,8 +428,8 @@
     "productId": "afded6df-058f-477d-9878-e0e0b1d3dff3",
     "timestamp": "2008-10-13T00:50:04Z",
     "quantity": 134,
-    "unitCost": 4446.17,
-    "totalCost": 1718.57
+    "unitCost": 17784680,
+    "totalCost": 6874280
   },
   {
     "accountId": "test-account-123",
@@ -437,8 +437,8 @@
     "productId": "daa29167-82a7-474b-9687-b8b903e7ec69",
     "timestamp": "2014-09-16T22:59:06Z",
     "quantity": 807,
-    "unitCost": 9916.73,
-    "totalCost": 6818.54
+    "unitCost": 39666920,
+    "totalCost": 27274160
   },
   {
     "accountId": "test-account-123",
@@ -446,8 +446,8 @@
     "productId": "ccb83982-71f3-4497-bad8-7e64c6920dc6",
     "timestamp": "2007-03-28T02:21:31Z",
     "quantity": 726,
-    "unitCost": 2967.87,
-    "totalCost": 5509.38
+    "unitCost": 11871480,
+    "totalCost": 22037520
   },
   {
     "accountId": "test-account-123",
@@ -455,8 +455,8 @@
     "productId": "1936d406-e89e-40e4-bff7-1827532269d4",
     "timestamp": "2010-09-20T14:09:37Z",
     "quantity": 763,
-    "unitCost": 2083.13,
-    "totalCost": 9062.53
+    "unitCost": 8332520,
+    "totalCost": 36250120
   },
   {
     "accountId": "test-account-123",
@@ -464,8 +464,8 @@
     "productId": "c849a535-5f8b-47e3-889c-015693a644ac",
     "timestamp": "2016-08-03T19:45:31Z",
     "quantity": 675,
-    "unitCost": 6611.91,
-    "totalCost": 2353.38
+    "unitCost": 26447640,
+    "totalCost": 9413520
   },
   {
     "accountId": "test-account-123",
@@ -473,8 +473,8 @@
     "productId": "0c3e80ee-59b3-4fc4-b760-8b07acc2d3ae",
     "timestamp": "2005-03-28T16:39:46Z",
     "quantity": 839,
-    "unitCost": 1488.73,
-    "totalCost": 403.2
+    "unitCost": 5954920,
+    "totalCost": 1612800
   },
   {
     "accountId": "test-account-123",
@@ -482,8 +482,8 @@
     "productId": "d8f5bee3-f3eb-4071-a124-6b857e0fd798",
     "timestamp": "2010-09-11T18:58:14Z",
     "quantity": 776,
-    "unitCost": 9893.08,
-    "totalCost": 2071.46
+    "unitCost": 39572320,
+    "totalCost": 8285840
   },
   {
     "accountId": "test-account-123",
@@ -491,8 +491,8 @@
     "productId": "8d15de86-0e4a-4414-9166-7a33610202d3",
     "timestamp": "2011-06-19T11:19:53Z",
     "quantity": 720,
-    "unitCost": 3132.2,
-    "totalCost": 1104.45
+    "unitCost": 12528800,
+    "totalCost": 4417800
   },
   {
     "accountId": "test-account-123",
@@ -500,8 +500,8 @@
     "productId": "ea8fd0b9-c2d9-4d43-9c23-44cb99d079bb",
     "timestamp": "2001-12-13T15:26:09Z",
     "quantity": 392,
-    "unitCost": 4880.07,
-    "totalCost": 7915.32
+    "unitCost": 19520280,
+    "totalCost": 31661280
   },
   {
     "accountId": "test-account-123",
@@ -509,8 +509,8 @@
     "productId": "25d01c80-bca1-4a00-b1d0-0fbd39ff9e89",
     "timestamp": "2019-07-06T09:30:09Z",
     "quantity": 265,
-    "unitCost": 2609.83,
-    "totalCost": 1980.18
+    "unitCost": 10439320,
+    "totalCost": 7920720
   },
   {
     "accountId": "test-account-123",
@@ -518,8 +518,8 @@
     "productId": "1d6df6e3-b7ea-4507-9d66-87c6ee8ed5b9",
     "timestamp": "2005-08-17T21:00:54Z",
     "quantity": 984,
-    "unitCost": 8085.15,
-    "totalCost": 8511.07
+    "unitCost": 32340600,
+    "totalCost": 34044280
   },
   {
     "accountId": "test-account-123",
@@ -527,8 +527,8 @@
     "productId": "000a8c23-5bca-436c-a216-4e747a94c511",
     "timestamp": "2003-10-14T08:56:13Z",
     "quantity": 575,
-    "unitCost": 6609.95,
-    "totalCost": 3212.6
+    "unitCost": 26439800,
+    "totalCost": 12850400
   },
   {
     "accountId": "test-account-123",
@@ -536,8 +536,8 @@
     "productId": "c5b600dc-6bfb-492a-b335-c3cc8c707959",
     "timestamp": "2009-01-26T02:37:46Z",
     "quantity": 324,
-    "unitCost": 5032.83,
-    "totalCost": 6453.79
+    "unitCost": 20131320,
+    "totalCost": 25815160
   },
   {
     "accountId": "test-account-123",
@@ -545,8 +545,8 @@
     "productId": "9d5fafbc-312b-47e8-ada1-283918f0c3b5",
     "timestamp": "2017-09-20T01:05:24Z",
     "quantity": 859,
-    "unitCost": 9826.12,
-    "totalCost": 4717.49
+    "unitCost": 39304480,
+    "totalCost": 18869960
   },
   {
     "accountId": "test-account-123",
@@ -554,8 +554,8 @@
     "productId": "0114d5d4-ae48-46fa-b0ca-afe60eb88add",
     "timestamp": "2014-11-05T03:06:06Z",
     "quantity": 713,
-    "unitCost": 8238.67,
-    "totalCost": 6012.29
+    "unitCost": 32954680,
+    "totalCost": 24049160
   },
   {
     "accountId": "test-account-123",
@@ -563,8 +563,8 @@
     "productId": "e5b0da8c-148d-4680-b262-8609fb8a10da",
     "timestamp": "2008-11-29T17:59:44Z",
     "quantity": 230,
-    "unitCost": 684.84,
-    "totalCost": 202.1
+    "unitCost": 2739360,
+    "totalCost": 808400
   },
   {
     "accountId": "test-account-123",
@@ -572,8 +572,8 @@
     "productId": "2be5b024-2c96-4f29-912c-c6f36353f799",
     "timestamp": "2018-03-14T04:27:34Z",
     "quantity": 247,
-    "unitCost": 7781.32,
-    "totalCost": 55.1
+    "unitCost": 31125280,
+    "totalCost": 220400
   },
   {
     "accountId": "test-account-123",
@@ -581,8 +581,8 @@
     "productId": "fcf2e432-62a3-4b6f-a34d-36e42a12272e",
     "timestamp": "2010-05-03T03:18:22Z",
     "quantity": 267,
-    "unitCost": 5.18,
-    "totalCost": 5559.82
+    "unitCost": 20720,
+    "totalCost": 22239280
   },
   {
     "accountId": "test-account-123",
@@ -590,8 +590,8 @@
     "productId": "fc4c81e5-f1ac-40f5-8c6f-da3fbad5599d",
     "timestamp": "2001-09-14T20:35:26Z",
     "quantity": 298,
-    "unitCost": 388.02,
-    "totalCost": 364.51
+    "unitCost": 1552080,
+    "totalCost": 1458040
   },
   {
     "accountId": "test-account-123",
@@ -599,8 +599,8 @@
     "productId": "07238d8e-0037-4972-87ca-0df206ee3e42",
     "timestamp": "2021-07-11T20:29:31Z",
     "quantity": 356,
-    "unitCost": 3099.1,
-    "totalCost": 9858.3
+    "unitCost": 12396400,
+    "totalCost": 39433200
   },
   {
     "accountId": "test-account-123",
@@ -608,8 +608,8 @@
     "productId": "154b7860-23a2-4564-ad99-1745ab7122ef",
     "timestamp": "2015-11-29T04:47:23Z",
     "quantity": 560,
-    "unitCost": 8579.08,
-    "totalCost": 6600.09
+    "unitCost": 34316320,
+    "totalCost": 26400360
   },
   {
     "accountId": "test-account-123",
@@ -617,8 +617,8 @@
     "productId": "8d4bf814-65d4-4df4-84cc-68911d925fdf",
     "timestamp": "2016-09-15T07:58:08Z",
     "quantity": 843,
-    "unitCost": 556.0,
-    "totalCost": 6556.65
+    "unitCost": 2224000,
+    "totalCost": 26226600
   },
   {
     "accountId": "test-account-123",
@@ -626,8 +626,8 @@
     "productId": "a52bf1bd-3d35-4cd2-849a-354e3952e2d2",
     "timestamp": "2016-03-27T16:52:42Z",
     "quantity": 288,
-    "unitCost": 9563.81,
-    "totalCost": 1649.02
+    "unitCost": 38255240,
+    "totalCost": 6596080
   },
   {
     "accountId": "test-account-123",
@@ -635,8 +635,8 @@
     "productId": "d35623ee-bef6-42b2-8776-2f99f8bb4782",
     "timestamp": "2000-03-20T02:42:32Z",
     "quantity": 725,
-    "unitCost": 9495.08,
-    "totalCost": 5749.92
+    "unitCost": 37980320,
+    "totalCost": 22999680
   },
   {
     "accountId": "test-account-123",
@@ -644,8 +644,8 @@
     "productId": "8ac1ac77-7358-425e-be16-0bdde9f02e59",
     "timestamp": "2012-09-14T23:33:07Z",
     "quantity": 141,
-    "unitCost": 4504.95,
-    "totalCost": 1561.89
+    "unitCost": 18019800,
+    "totalCost": 6247560
   },
   {
     "accountId": "test-account-123",
@@ -653,8 +653,8 @@
     "productId": "1afc136b-4d9f-4e8e-aace-8e1df908a404",
     "timestamp": "2008-01-02T02:33:03Z",
     "quantity": 388,
-    "unitCost": 6425.96,
-    "totalCost": 837.03
+    "unitCost": 25703840,
+    "totalCost": 3348120
   },
   {
     "accountId": "test-account-123",
@@ -662,8 +662,8 @@
     "productId": "af84cc12-4fea-4f58-aece-f2ce92ca9580",
     "timestamp": "2018-06-18T17:24:06Z",
     "quantity": 194,
-    "unitCost": 8925.08,
-    "totalCost": 8644.66
+    "unitCost": 35700320,
+    "totalCost": 34578640
   },
   {
     "accountId": "test-account-123",
@@ -671,8 +671,8 @@
     "productId": "86e3bb1c-2f5d-4774-98f3-4df7cddd0a0f",
     "timestamp": "2022-11-06T03:27:35Z",
     "quantity": 873,
-    "unitCost": 7537.82,
-    "totalCost": 1841.36
+    "unitCost": 30151280,
+    "totalCost": 7365440
   },
   {
     "accountId": "test-account-123",
@@ -680,8 +680,8 @@
     "productId": "26b017c6-06d8-443f-9b4a-d6b1cee6f4c0",
     "timestamp": "2022-04-20T14:20:15Z",
     "quantity": 70,
-    "unitCost": 5186.13,
-    "totalCost": 9731.04
+    "unitCost": 20744520,
+    "totalCost": 38924160
   },
   {
     "accountId": "test-account-123",
@@ -689,8 +689,8 @@
     "productId": "440c9e80-6bf8-4eb3-b2d2-f81936d67de3",
     "timestamp": "2008-04-18T13:02:07Z",
     "quantity": 10,
-    "unitCost": 6835.47,
-    "totalCost": 4138.19
+    "unitCost": 27341880,
+    "totalCost": 16552760
   },
   {
     "accountId": "test-account-123",
@@ -698,8 +698,8 @@
     "productId": "98255f4e-40a6-470f-89a5-0792729f8947",
     "timestamp": "2010-06-26T01:51:22Z",
     "quantity": 651,
-    "unitCost": 1095.15,
-    "totalCost": 503.43
+    "unitCost": 4380600,
+    "totalCost": 2013720
   },
   {
     "accountId": "test-account-123",
@@ -707,8 +707,8 @@
     "productId": "2a339fb2-f9f3-43bc-a85a-b217a0a38f12",
     "timestamp": "2015-06-01T00:52:08Z",
     "quantity": 638,
-    "unitCost": 2282.03,
-    "totalCost": 5722.0
+    "unitCost": 9128120,
+    "totalCost": 22888000
   },
   {
     "accountId": "test-account-123",
@@ -716,8 +716,8 @@
     "productId": "8a8391b2-b4ac-4847-b652-66ffd8d65875",
     "timestamp": "2011-04-19T21:39:04Z",
     "quantity": 67,
-    "unitCost": 5414.05,
-    "totalCost": 1905.77
+    "unitCost": 21656200,
+    "totalCost": 7623080
   },
   {
     "accountId": "test-account-123",
@@ -725,8 +725,8 @@
     "productId": "be2157fb-7454-405e-9511-bf7ba81b7726",
     "timestamp": "2008-12-12T12:16:22Z",
     "quantity": 775,
-    "unitCost": 333.25,
-    "totalCost": 2883.66
+    "unitCost": 1333000,
+    "totalCost": 11534640
   },
   {
     "accountId": "test-account-123",
@@ -734,8 +734,8 @@
     "productId": "fdf1ba3d-fa06-4ce5-90ff-d081c5d37176",
     "timestamp": "2020-12-29T16:46:08Z",
     "quantity": 513,
-    "unitCost": 6781.28,
-    "totalCost": 5454.83
+    "unitCost": 27125120,
+    "totalCost": 21819320
   },
   {
     "accountId": "test-account-123",
@@ -743,8 +743,8 @@
     "productId": "afded6df-058f-477d-9878-e0e0b1d3dff3",
     "timestamp": "2019-04-05T05:20:27Z",
     "quantity": 13,
-    "unitCost": 5414.02,
-    "totalCost": 4540.62
+    "unitCost": 21656080,
+    "totalCost": 18162480
   },
   {
     "accountId": "test-account-123",
@@ -752,8 +752,8 @@
     "productId": "daa29167-82a7-474b-9687-b8b903e7ec69",
     "timestamp": "2019-05-19T23:47:06Z",
     "quantity": 522,
-    "unitCost": 2047.88,
-    "totalCost": 456.65
+    "unitCost": 8191520,
+    "totalCost": 1826600
   },
   {
     "accountId": "test-account-123",
@@ -761,8 +761,8 @@
     "productId": "ccb83982-71f3-4497-bad8-7e64c6920dc6",
     "timestamp": "2018-12-19T05:41:28Z",
     "quantity": 20,
-    "unitCost": 7741.5,
-    "totalCost": 6205.14
+    "unitCost": 30966000,
+    "totalCost": 24820560
   },
   {
     "accountId": "test-account-123",
@@ -770,8 +770,8 @@
     "productId": "1936d406-e89e-40e4-bff7-1827532269d4",
     "timestamp": "2002-10-06T13:58:33Z",
     "quantity": 473,
-    "unitCost": 8571.71,
-    "totalCost": 3088.43
+    "unitCost": 34286840,
+    "totalCost": 12353720
   },
   {
     "accountId": "test-account-123",
@@ -779,8 +779,8 @@
     "productId": "c849a535-5f8b-47e3-889c-015693a644ac",
     "timestamp": "2008-10-07T18:13:43Z",
     "quantity": 621,
-    "unitCost": 2592.95,
-    "totalCost": 5944.58
+    "unitCost": 10371800,
+    "totalCost": 23778320
   },
   {
     "accountId": "test-account-123",
@@ -788,8 +788,8 @@
     "productId": "0c3e80ee-59b3-4fc4-b760-8b07acc2d3ae",
     "timestamp": "2003-08-29T16:23:44Z",
     "quantity": 240,
-    "unitCost": 7732.65,
-    "totalCost": 4956.83
+    "unitCost": 30930600,
+    "totalCost": 19827320
   },
   {
     "accountId": "test-account-123",
@@ -797,8 +797,8 @@
     "productId": "d8f5bee3-f3eb-4071-a124-6b857e0fd798",
     "timestamp": "2020-08-16T06:05:41Z",
     "quantity": 729,
-    "unitCost": 9648.57,
-    "totalCost": 9558.36
+    "unitCost": 38594280,
+    "totalCost": 38233440
   },
   {
     "accountId": "test-account-123",
@@ -806,8 +806,8 @@
     "productId": "8d15de86-0e4a-4414-9166-7a33610202d3",
     "timestamp": "2019-06-19T07:23:51Z",
     "quantity": 109,
-    "unitCost": 6608.23,
-    "totalCost": 8900.4
+    "unitCost": 26432920,
+    "totalCost": 35601600
   },
   {
     "accountId": "test-account-123",
@@ -815,8 +815,8 @@
     "productId": "ea8fd0b9-c2d9-4d43-9c23-44cb99d079bb",
     "timestamp": "2014-03-12T17:47:55Z",
     "quantity": 490,
-    "unitCost": 4139.51,
-    "totalCost": 428.37
+    "unitCost": 16558040,
+    "totalCost": 1713480
   },
   {
     "accountId": "test-account-123",
@@ -824,8 +824,8 @@
     "productId": "25d01c80-bca1-4a00-b1d0-0fbd39ff9e89",
     "timestamp": "2002-12-27T20:19:43Z",
     "quantity": 926,
-    "unitCost": 305.23,
-    "totalCost": 326.1
+    "unitCost": 1220920,
+    "totalCost": 1304400
   },
   {
     "accountId": "test-account-123",
@@ -833,8 +833,8 @@
     "productId": "1d6df6e3-b7ea-4507-9d66-87c6ee8ed5b9",
     "timestamp": "2000-03-28T15:44:26Z",
     "quantity": 210,
-    "unitCost": 838.57,
-    "totalCost": 3004.31
+    "unitCost": 3354280,
+    "totalCost": 12017240
   },
   {
     "accountId": "test-account-123",
@@ -842,8 +842,8 @@
     "productId": "000a8c23-5bca-436c-a216-4e747a94c511",
     "timestamp": "2009-09-30T02:48:52Z",
     "quantity": 452,
-    "unitCost": 6538.73,
-    "totalCost": 9188.61
+    "unitCost": 26154920,
+    "totalCost": 36754440
   },
   {
     "accountId": "test-account-123",
@@ -851,8 +851,8 @@
     "productId": "c5b600dc-6bfb-492a-b335-c3cc8c707959",
     "timestamp": "2018-01-17T10:45:44Z",
     "quantity": 418,
-    "unitCost": 7846.58,
-    "totalCost": 9258.71
+    "unitCost": 31386320,
+    "totalCost": 37034840
   },
   {
     "accountId": "test-account-123",
@@ -860,8 +860,8 @@
     "productId": "9d5fafbc-312b-47e8-ada1-283918f0c3b5",
     "timestamp": "2004-07-18T14:25:34Z",
     "quantity": 902,
-    "unitCost": 1056.47,
-    "totalCost": 4319.07
+    "unitCost": 4225880,
+    "totalCost": 17276280
   },
   {
     "accountId": "test-account-123",
@@ -869,8 +869,8 @@
     "productId": "0114d5d4-ae48-46fa-b0ca-afe60eb88add",
     "timestamp": "2017-01-24T20:41:03Z",
     "quantity": 757,
-    "unitCost": 5163.91,
-    "totalCost": 8653.39
+    "unitCost": 20655640,
+    "totalCost": 34613560
   },
   {
     "accountId": "test-account-123",
@@ -878,8 +878,8 @@
     "productId": "e5b0da8c-148d-4680-b262-8609fb8a10da",
     "timestamp": "2013-02-09T06:05:04Z",
     "quantity": 856,
-    "unitCost": 9928.49,
-    "totalCost": 3502.45
+    "unitCost": 39713960,
+    "totalCost": 14009800
   },
   {
     "accountId": "test-account-123",
@@ -887,8 +887,8 @@
     "productId": "2be5b024-2c96-4f29-912c-c6f36353f799",
     "timestamp": "2000-01-23T11:04:04Z",
     "quantity": 879,
-    "unitCost": 4230.1,
-    "totalCost": 7286.78
+    "unitCost": 16920400,
+    "totalCost": 29147120
   },
   {
     "accountId": "test-account-123",
@@ -896,7 +896,7 @@
     "productId": "fcf2e432-62a3-4b6f-a34d-36e42a12272e",
     "timestamp": "2004-07-08T16:20:29Z",
     "quantity": 762,
-    "unitCost": 1296.53,
-    "totalCost": 7583.95
+    "unitCost": 5186120,
+    "totalCost": 30335800
   }
 ]

@@ -19,7 +19,12 @@ import usePersistentState from "@/hooks/usePersistentState";
 import { formatCurrency } from "@/lib/currency";
 
 function isFetchBaseQueryError(error: unknown): error is FetchBaseQueryError {
-  return typeof error === 'object' && error != null && 'status' in error && 'data' in error;
+  return (
+    typeof error === "object" &&
+    error != null &&
+    "status" in error &&
+    "data" in error
+  );
 }
 
 interface CartItem {
@@ -33,7 +38,8 @@ const Sales = () => {
   const { data: products } = useGetProductsQuery(productSearchTerm);
   const { data: customers } = useGetCustomersQuery();
   const { data: saleOrders, isLoading, isError } = useGetSaleOrdersQuery();
-  const [createSaleOrder, { isLoading: isCreating }] = useCreateSaleOrderMutation();
+  const [createSaleOrder, { isLoading: isCreating }] =
+    useCreateSaleOrderMutation();
 
   const [cart, setCart] = usePersistentState<CartItem[]>("cart", []);
   const [selectedCustomerId, setSelectedCustomerId] = useState<string>("");
@@ -46,7 +52,9 @@ const Sales = () => {
 
   // Add product to cart
   const addToCart = (product: Product) => {
-    const existingItem = cart.find((item) => item.product.productId === product.productId);
+    const existingItem = cart.find(
+      (item) => item.product.productId === product.productId
+    );
 
     if (existingItem) {
       if (existingItem.quantity < product.stockQuantity) {
@@ -80,7 +88,9 @@ const Sales = () => {
     } else if (newQuantity <= item.product.stockQuantity) {
       setCart(
         cart.map((i) =>
-          i.product.productId === productId ? { ...i, quantity: newQuantity } : i
+          i.product.productId === productId
+            ? { ...i, quantity: newQuantity }
+            : i
         )
       );
     } else {
@@ -97,13 +107,18 @@ const Sales = () => {
   const updateUnitPrice = (productId: string, newPrice: number) => {
     setCart(
       cart.map((item) =>
-        item.product.productId === productId ? { ...item, unitPrice: newPrice } : item
+        item.product.productId === productId
+          ? { ...item, unitPrice: newPrice }
+          : item
       )
     );
   };
 
   // Calculate totals
-  const subtotal = cart.reduce((sum, item) => sum + item.quantity * item.unitPrice, 0);
+  const subtotal = cart.reduce(
+    (sum, item) => sum + item.quantity * item.unitPrice,
+    0
+  );
   const total = subtotal + tax - discount;
 
   // Clear cart
@@ -190,7 +205,9 @@ const Sales = () => {
   ];
 
   if (isError) {
-    return <div className="text-center text-red-500 py-4">Failed to load sales</div>;
+    return (
+      <div className="text-center text-red-500 py-4">Failed to load sales</div>
+    );
   }
 
   return (
@@ -201,8 +218,12 @@ const Sales = () => {
         <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4">
           <div className="bg-white dark:bg-gray-800 rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto p-8">
             <div className="text-center mb-6">
-              <h2 className="text-2xl font-bold text-gray-900 dark:text-white">Invoice</h2>
-              <p className="text-lg text-gray-600 dark:text-gray-400">{lastInvoice.invoiceNumber}</p>
+              <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
+                Invoice
+              </h2>
+              <p className="text-lg text-gray-600 dark:text-gray-400">
+                {lastInvoice.invoiceNumber}
+              </p>
             </div>
 
             <div className="mb-6">
@@ -211,7 +232,8 @@ const Sales = () => {
               </p>
               {lastInvoice.customer && (
                 <p className="text-sm text-gray-600 dark:text-gray-400">
-                  Customer: {lastInvoice.customer.name} ({lastInvoice.customer.email})
+                  Customer: {lastInvoice.customer.name} (
+                  {lastInvoice.customer.email})
                 </p>
               )}
             </div>
@@ -227,11 +249,18 @@ const Sales = () => {
               </thead>
               <tbody>
                 {lastInvoice.items.map((item: SaleItem) => (
-                  <tr key={item.saleItemId} className="border-b border-gray-200 dark:border-gray-700">
+                  <tr
+                    key={item.saleItemId}
+                    className="border-b border-gray-200 dark:border-gray-700"
+                  >
                     <td className="py-2">{item.product.name}</td>
                     <td className="text-right">{item.quantity}</td>
-                    <td className="text-right">{formatCurrency(item.unitPrice)}</td>
-                    <td className="text-right">{formatCurrency(item.totalPrice)}</td>
+                    <td className="text-right">
+                      {formatCurrency(item.unitPrice)}
+                    </td>
+                    <td className="text-right">
+                      {formatCurrency(item.totalPrice)}
+                    </td>
                   </tr>
                 ))}
               </tbody>
@@ -281,7 +310,9 @@ const Sales = () => {
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-6">
         {/* Products Selection */}
         <div className="lg:col-span-2 bg-white dark:bg-gray-800 p-6 rounded-lg shadow">
-          <h3 className="text-lg font-semibold mb-4 text-gray-900 dark:text-white">Products</h3>
+          <h3 className="text-lg font-semibold mb-4 text-gray-900 dark:text-white">
+            Products
+          </h3>
           <div className="mb-4">
             <input
               type="text"
@@ -302,8 +333,12 @@ const Sales = () => {
                     : "border-red-200 dark:border-red-900 opacity-50 cursor-not-allowed"
                 }`}
               >
-                <h4 className="font-semibold text-gray-900 dark:text-white truncate">{product.name}</h4>
-                <p className="text-sm text-gray-600 dark:text-gray-400">{formatCurrency(product.price)}</p>
+                <h4 className="font-semibold text-gray-900 dark:text-white truncate">
+                  {product.name}
+                </h4>
+                <p className="text-sm text-gray-600 dark:text-gray-400">
+                  {formatCurrency(product.price)}
+                </p>
                 <p className="text-xs text-gray-500 dark:text-gray-500">
                   Stock: {product.stockQuantity}
                 </p>
@@ -321,7 +356,9 @@ const Sales = () => {
         <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow">
           <div className="flex items-center gap-2 mb-4">
             <ShoppingCart className="w-6 h-6" />
-            <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Cart ({cart.length})</h3>
+            <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+              Cart ({cart.length})
+            </h3>
           </div>
 
           <div className="space-y-3 mb-4 max-h-64 overflow-y-auto">
@@ -332,9 +369,14 @@ const Sales = () => {
               </div>
             ) : (
               cart.map((item) => (
-                <div key={item.product.productId} className="border dark:border-gray-700 rounded p-3">
+                <div
+                  key={item.product.productId}
+                  className="border dark:border-gray-700 rounded p-3"
+                >
                   <div className="flex justify-between items-start mb-2">
-                    <span className="font-medium text-sm text-gray-900 dark:text-white">{item.product.name}</span>
+                    <span className="font-medium text-sm text-gray-900 dark:text-white">
+                      {item.product.name}
+                    </span>
                     <button
                       onClick={() => removeFromCart(item.product.productId)}
                       className="text-red-500 hover:text-red-700"
@@ -344,7 +386,12 @@ const Sales = () => {
                   </div>
                   <div className="flex items-center gap-2 mb-2">
                     <button
-                      onClick={() => updateQuantity(item.product.productId, item.quantity - 1)}
+                      onClick={() =>
+                        updateQuantity(
+                          item.product.productId,
+                          item.quantity - 1
+                        )
+                      }
                       className="p-1 bg-gray-200 dark:bg-gray-700 rounded"
                     >
                       <Minus className="w-3 h-3" />
@@ -352,11 +399,21 @@ const Sales = () => {
                     <input
                       type="number"
                       value={item.quantity}
-                      onChange={(e) => updateQuantity(item.product.productId, parseInt(e.target.value) || 0)}
-                      className="w-12 text-center bg-transparent border-x-0 border-y-1 border-gray-400 focus:ring-0 focus:border-gray-500"
+                      onChange={(e) =>
+                        updateQuantity(
+                          item.product.productId,
+                          parseInt(e.target.value) || 0
+                        )
+                      }
+                      className="w-12 text-center bg-transparent border-x-0 border-y border-gray-400 focus:ring-0 focus:border-gray-500"
                     />
                     <button
-                      onClick={() => updateQuantity(item.product.productId, item.quantity + 1)}
+                      onClick={() =>
+                        updateQuantity(
+                          item.product.productId,
+                          item.quantity + 1
+                        )
+                      }
                       className="p-1 bg-gray-200 dark:bg-gray-700 rounded"
                     >
                       <Plus className="w-3 h-3" />
@@ -364,7 +421,12 @@ const Sales = () => {
                     <input
                       type="number"
                       value={item.unitPrice}
-                      onChange={(e) => updateUnitPrice(item.product.productId, parseFloat(e.target.value) || 0)}
+                      onChange={(e) =>
+                        updateUnitPrice(
+                          item.product.productId,
+                          parseFloat(e.target.value) || 0
+                        )
+                      }
                       className="ml-auto w-20 px-2 py-1 border dark:border-gray-600 rounded text-sm bg-white dark:bg-gray-700 text-gray-900 dark:text-white"
                       step="0.01"
                     />
@@ -379,7 +441,9 @@ const Sales = () => {
 
           {/* Customer Selection */}
           <div className="mb-4">
-            <label className="block text-sm font-medium mb-2 text-gray-700 dark:text-gray-300">Customer (Optional)</label>
+            <label className="block text-sm font-medium mb-2 text-gray-700 dark:text-gray-300">
+              Customer (Optional)
+            </label>
             <select
               value={selectedCustomerId}
               onChange={(e) => setSelectedCustomerId(e.target.value)}
@@ -397,7 +461,9 @@ const Sales = () => {
           {/* Tax & Discount */}
           <div className="grid grid-cols-2 gap-2 mb-4">
             <div>
-              <label className="block text-sm mb-1 text-gray-700 dark:text-gray-300">Tax</label>
+              <label className="block text-sm mb-1 text-gray-700 dark:text-gray-300">
+                Tax
+              </label>
               <input
                 type="number"
                 value={tax}
@@ -407,7 +473,9 @@ const Sales = () => {
               />
             </div>
             <div>
-              <label className="block text-sm mb-1 text-gray-700 dark:text-gray-300">Discount</label>
+              <label className="block text-sm mb-1 text-gray-700 dark:text-gray-300">
+                Discount
+              </label>
               <input
                 type="number"
                 value={discount}
@@ -420,7 +488,9 @@ const Sales = () => {
 
           {/* Payment Method */}
           <div className="mb-4">
-            <label className="block text-sm font-medium mb-2 text-gray-700 dark:text-gray-300">Payment Method</label>
+            <label className="block text-sm font-medium mb-2 text-gray-700 dark:text-gray-300">
+              Payment Method
+            </label>
             <select
               value={paymentMethod}
               onChange={(e) => setPaymentMethod(e.target.value)}
@@ -479,7 +549,9 @@ const Sales = () => {
 
       {/* Sales History */}
       <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow">
-        <h3 className="text-lg font-semibold mb-4 text-gray-900 dark:text-white">Sales History</h3>
+        <h3 className="text-lg font-semibold mb-4 text-gray-900 dark:text-white">
+          Sales History
+        </h3>
         <DataGrid
           rows={saleOrders || []}
           columns={columns}
@@ -489,7 +561,7 @@ const Sales = () => {
           initialState={{
             pagination: { paginationModel: { pageSize: 10 } },
           }}
-          className="!text-gray-700 dark:!text-gray-200 !border-gray-200 dark:!border-gray-700"
+          className="text-gray-700! dark:text-gray-200! border-gray-200! dark:border-gray-700!"
           sx={{
             "& .MuiDataGrid-cell": {
               color: "inherit",
