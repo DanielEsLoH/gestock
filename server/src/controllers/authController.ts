@@ -73,7 +73,6 @@ export const register = async (req: Request, res: Response): Promise<void> => {
 
 export const login = async (req: Request, res: Response): Promise<void> => {
   try {
-    console.log("Login attempt with body:", req.body);
     const { email, password } = req.body;
 
     // Validate required fields
@@ -90,8 +89,6 @@ export const login = async (req: Request, res: Response): Promise<void> => {
     const account = await prisma.account.findUnique({
       where: { email }
     });
-
-    console.log("Account found:", account);
 
     if (!account) {
       console.log("Login failed: Account not found.");
